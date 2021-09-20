@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style/semester.css">    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>CODE HUB</title>
+    <script>
+        function navslide(){
+            let nav = document.getElementById('nav-links');
+            nav.classList.toggle("nav-active");
+            
+        }
+
+        function replymsg(){
+            alert("Thank You for your messgae");
+        }
+
+    </script>
+</head>
+<body>
+    <div class="nav">
+        <label class="logo">CODE HUB</label>  
+        <!-- <label class="logo">LAB MASTER</label>   -->
+        <ul class=nav-links id="nav-links">
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/bca/semester.html">SEMESTER</a></li>
+            <!-- <li><a href="#">ABOUT</a></li> -->
+            <li><a href="#section-3">FEEDBACK</a></li>
+        </ul>
+        <div class="burger" id="burger" onclick="navslide()">
+            <!-- <i class="fas fa-bars"></i>  -->
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>    
+    </div> 
+    <div class="body">
+        <div class="s1-c2-sec-1-row-2 row-1-sem">
+            <div class="s1-c1-card s1-c1-card-1">
+                <div class="inner-card-content">
+                    <a href="/bca/semester1.html">
+                        <div class="inner-card-content-detail i-c-c-d-semester-1 i-c-c-d-semester">
+                            <img src="/image/icons8-calendar-1-96.png" alt="semester-1">
+                            <h3>SEMESTER &#8544;</h3> <!--semster1 -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="s1-c1-card s1-c1-card-1">
+                <div class="inner-card-content">
+                    <a href="/bca/semester2.html">
+                        <div class="inner-card-content-detail i-c-c-d-semester-2 i-c-c-d-semester">
+                            <img src="/image/icons8-calendar-2-96.png" alt="semester-1">
+                            <h3>SEMESTER &#8545;</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="s1-c1-card s1-c1-card-1">
+                <div class="inner-card-content">
+                    <a href="/bca/semester3.html">
+                        <div class="inner-card-content-detail i-c-c-d-semester-3 i-c-c-d-semester">
+                            <img src="/image/icons8-calendar-3-96.png" alt="semester-1">
+                            <h3>SEMESTER &#8546;</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Same as above -->
+        <div class="s1-c2-sec-1-row-2 row-2-sem">
+            <div class="s1-c1-card s1-c1-card-1">
+                <div class="inner-card-content">
+                    <a href="/bca/semester4.html">
+                        <div class="inner-card-content-detail i-c-c-d-semester-4 i-c-c-d-semester">
+                            <img src="/image/icons8-calendar-4-96.png" alt="semester-1">
+                            <h3>SEMESTER &#8547;</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="s1-c1-card s1-c1-card-1">
+                <div class="inner-card-content">
+                    <a href="/bca/semester5.html">
+                        <div class="inner-card-content-detail i-c-c-d-semester-5 i-c-c-d-semester">
+                            <img src="/image/icons8-calendar-5-96.png" alt="semester-1">
+                            <h3>SEMESTER &#8548;</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="s1-c1-card s1-c1-card-1">
+                <div class="inner-card-content">
+                    <a href="/bca/semester6.html">
+                        <div class="inner-card-content-detail i-c-c-d-semester-6 i-c-c-d-semester">
+                            <img src="/image/icons8-calendar-6-96.png" alt="semester-1">
+                            <h3>SEMESTER &#8549;</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3" id="section-3">
+        <div class="feedback-content">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="feedback-form">
+            <form action="" method="POST">
+                <input type="text" name="name" id="name" class="Name" placeholder="Name" size="55" required><br>  
+                <input type="email" name="email" id="email" class="Email" placeholder="Email" required><br>
+                <textarea name="feedback" id="feedback" class="feedback-msg" cols="30" rows="5" placeholder="Your Message" required></textarea><br>  
+                <button class="send-mail">Send Message</button>
+            </form>
+        </div>
+    </div>              
+</body> 
+</html>
+
+
