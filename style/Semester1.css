@@ -1,0 +1,31 @@
+.heading-display{
+    height: 50vh;
+    background-color: #2C7EDE;
+}
+.solution-wrapper{
+    background-color: red;
+    border: 5px solid black;
+    height: 100vh;
+    margin: -200px 120px 0 120px;
+    display: flex;
+}
+.s-w-left-content{
+    border: 5px solid yellow;
+    width: 30%;
+}
+.s-w-right-content{
+    border: 5px solid green;
+    width: 70%;
+}
+
+
+
+.section3{
+    margin-top: 100px;
+    /* height: 60vh; */
+    padding: 60px 40px 20px 40px;
+    width: 100%;  
+    background-color: #2C7EDE;
+    
+
+}

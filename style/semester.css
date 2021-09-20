@@ -1,0 +1,55 @@
+.i-c-c-d-semester h3{
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 25px;
+    
+    
+
+}
+.i-c-c-d-semester img{
+    align-items: center;
+    justify-content: center;
+    width:65%;
+}
+.inner-card-content-detail{
+    min-width: 160px;
+    max-width: 170px;
+    height: 200px;
+}
+.inner-card-content a{
+    text-decoration: none;
+}
+.main-body{
+    height: 92vh;
+    
+
+}
+.left-content{
+    border: 5px solid yellow;
+    width: 25%;
+}
+.right-content{
+    border: 5px solid red;
+    width: 75%;
+}
+/* darkmode theme
+body{
+    background-color: #181818;
+
+}
+.section3{
+    margin: 0;
+}
+.nav{
+    background-color: #212121;
+}
+label.logo{
+    color: #ffff;
+}
+.nav ul li a {
+    color: #ffff;
+}
+.section3{
+    background-color: #181818;
+} */
+

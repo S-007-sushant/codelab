@@ -1,0 +1,131 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.heading-display{
+    height: 30vh;
+    /* background-color: #2C7EDE; */
+    background-color: #e0f0fc;
+}
+.solution-wrapper{
+
+    /* border: 5px solid black; */
+    /* height: 100vh; */
+    margin: -100px 120px 0 120px;
+    display: flex;    
+}
+.s-w-left-content{
+    float: left;
+    border: 2px solid #d3dce6;
+    width: 30%;
+    /* background-color:#fbfbfb; */
+    background-color: white;
+    height: 300px;
+    border-radius: 12px;
+}
+.s-w-left-content button{
+    display: block;
+    height: 55px;
+    /* background-color: rgb(251,251,251); */
+    background-color: white;
+    color: black;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    text-indent: 12px;
+    
+}
+/* .s-w-left-content button.active{
+    background-color: rgb(251,251,251);
+    border-left: 5px solid blue;
+} */
+
+.subject-button button.active{
+    background-color: #e0f0fc;  
+    border-left: 5px solid #0072b3;
+}
+
+
+.s-w-left-content button:hover{
+    background-color: #e0f0fc;
+}
+.tabcontent{
+    float: left;
+    padding: 30px 20px;
+    /* border: 1px solid #ccc; */
+    width: 100%;
+    border-left: none;
+    /* height: 100%; */
+}
+.s-w-right-content{
+    border: 2px solid rgb(211, 220, 230);
+    width: 70%;
+    margin-left: 40px;
+    background-color: #fbfbfb;
+    border-radius: 12px;
+}
+
+.select-semester{
+    display: flex;
+    height: 70px;
+    /* background-color: rgb(251,251,251); */
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+    border-radius: 12px 12px 0 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.select-semester button.previous-semester{
+    /* border: 2px solid #4169E1; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(251,251,251);
+    text-indent: 0px;   
+}
+.select-semester button.previous-semester:hover{
+    background-color: #4169E1;
+    outline-color: #1877f2;
+    color: white;
+    transition: .4s;
+}
+
+.next-semester{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.previous-semester-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+.subject-button{
+    margin-top: 20px;
+}
+.section3{
+    margin-top: 100px;
+    /* height: 60vh; */
+    padding: 60px 40px 20px 40px;
+    width: 100%;  
+    background-color: #2C7EDE;
+}
+
+.tabcontent{
+    padding-top: 20px;   
+}
+
+.tabcontent h2{
+    color: rgb(63, 62, 62);
+}
+.hidecontent{
+    display: none;
+}
