@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">  
+    <script src="/script/app.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>CODE HUB</title>
+    <script>
+        function navslide(){
+            let nav = document.getElementById('nav-links');
+            nav.classList.toggle("nav-active");
+        }
+
+        function replymsg(){
+            alert("Thank You for your messgae");
+        }
+
+    </script>
+</head>
+<body>
+        
+    <div class="nav">
+        <label class="logo">CODE HUB</label>  
+        
+        <ul class=nav-links id="nav-links">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./bca/semester.html">SEMESTER</a></li>
+            <!-- <li><a href="#">ABOUT</a></li> -->
+            <li><a href="#section-3">FEEDBACK</a></li>
+        </ul>
+        <div class="burger" id="burger" onclick="navslide()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>    
+    </div> 
+
+    <div class="wrapper2">
+        <div class="section-1">
+            <div class="s1-container">
+                <div class="s1-c1-content-1">  
+                    <div class="s1-c1-content-1-detail">
+                        <h1>Get Lab Solutions for Free</h1>
+                        <p>
+                        Want to complete the lab questions as soon as possible.
+                        Here at Lab Master you will get all the solutions of your
+                        questions you are searching for.
+                        <!-- At first read the code and then try understand the code and
+                        then write the code with full understanding. -->
+                        </p>
+                    </div>  
+                </div>
+                <div class="s1-c1-content-2">
+                <img src="./image/5259951.jpg" alt="image_1">    
+                </div> 
+           </div>
+           <div class="s1-container-2">
+               <div class="s1-c2-main-sec">
+                   <div class="s1-c2-sec-1-row-1">
+                        <div class="sec-1-row-1-box1">
+                            <h2>Select Subject</h2>
+                        </div>   
+                        <div class="sec-1-row-1-box2">
+                            <a href="./bca/semester.html"><button class="view-all">View All</button></a>
+                        </div>   
+                    <!-- Select a Course to learn -->
+                   </div>
+                   <div class="s1-c2-sec-1-row-2">
+                       <div class="s1-c1-card s1-c1-card-1">
+                           <div class="inner-card-content">
+                               <div class="inner-card-content-detail">
+                                <div class="inner-card-content-detail-img">
+                                    <img src="./image/icons8-python-48.png" alt="Python Programming">
+                                </div>
+                                <h3>Python</h3>
+                                <div class="i-c-c-d-learnmore">
+                                    <div class="inner-card-conetent-detail-learn">
+                                        Learn More
+                                    </div>
+                                    <div class="inner-card-content-learnmore-img">
+                                        <img src="./image/icons8-right-arrow-32.png" alt="right_arrow">
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                       <div class="s1-c1-card s1-c1-card-2">
+                        <div class="inner-card-content">
+                            <div class="inner-card-content-detail">
+                                <div class="inner-card-content-detail-img">
+                                    <img src="./image/icons8-c-programming-48.png" alt="C Programming">
+                                </div>
+                                <h3>C</h3>
+                                <div class="i-c-c-d-learnmore">
+                                    <div class="inner-card-conetent-detail-learn">
+                                        Learn More
+                                    </div>
+                                    <div class="inner-card-content-learnmore-img">
+                                        <img src="./image/icons8-right-arrow-32.png" alt="right_arrow">
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="s1-c1-card s1-c1-card-3">
+                        <div class="inner-card-content">
+                            <div class="inner-card-content-detail">
+                                <div class="inner-card-content-detail-img">
+                                    <img src="./image/icons8-java-48.png" alt="Java Programming">
+                                </div>
+                                <h3>Java</h3>
+                                <div class="i-c-c-d-learnmore">
+                                    <div class="inner-card-conetent-detail-learn">
+                                        Learn More
+                                    </div>
+                                    <div class="inner-card-content-learnmore-img">
+                                        <img src="./image/icons8-right-arrow-32.png" alt="right_arrow">
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="s1-c1-card s1-c1-card-4">
+                        <div class="inner-card-content">
+                            <div class="inner-card-content-detail">
+                                <div class="inner-card-content-detail-img">
+                                    <img src="./image/icons8-operating-system-50.png" alt="Operating System">
+                                </div>
+                                <h3>Operating System</h3>
+                                <div class="i-c-c-d-learnmore">
+                                    <div class="inner-card-conetent-detail-learn">
+                                        Learn More
+                                    </div>
+                                    <div class="inner-card-content-learnmore-img">
+                                        <img src="./image/icons8-right-arrow-32.png" alt="right_arrow">
+                                    </div>
+                                 </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3" id="section-3">
+                <div class="feedback-content">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="feedback-form">
+                    <form action="mailto:rsushant2000@gmail.com" method="POST">
+                        <input type="text" name="name" id="name" class="Name" placeholder="Name" size="55" required><br>  
+                        <input type="email" name="email" id="email" class="Email" placeholder="Email" required><br>
+                        <textarea name="feedback" id="feedback" class="feedback-msg" cols="30" rows="5" placeholder="Your Message" required></textarea><br>  
+                        <button class="send-mail">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>       
+</body> 
+</html>
+
+
