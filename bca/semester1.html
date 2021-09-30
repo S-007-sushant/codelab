@@ -1,74 +1,252 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
+  <html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/style/semester.css">
-    <link rel="stylesheet" href="/style/semester1.css">
-
-        
+    <link rel="stylesheet" href="/style/semester2.css">
+    <link rel="stylesheet" href="/style/semester3.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>CODE HUB</title>
-    <script>
-        function navslide(){
-            let nav = document.getElementById('nav-links');
-            nav.classList.toggle("nav-active");
-            
-        }
+    <script src="/script/app.js"></script>
+    <title>CODE HUB ~ Semster 1</title>
+     
+  </head>
+  <body>
+      <div class="nav">
+          <label class="logo">CODE HUB</label>  
+          <!-- <label class="logo">LAB MASTER</label>   -->
+          <ul class=nav-links id="nav-links">
+              <li><a href="/index.html">HOME</a></li>
+              <li><a href="/bca/semester.html">SEMESTER</a></li>
+              <!-- <li><a href="#">ABOUT</a></li> -->
+              <li><a href="#section-3">FEEDBACK</a></li>
+          </ul>
+          <div class="burger" id="burger" onclick="navslide()">
+              <!-- <i class="fas fa-bars"></i>  -->
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>    
+      </div>
+  
+      <div class="main-body">
+          <div class="heading-display"></div>
+          <div class="solution-wrapper">
+              <div class="s-w-left-content">
+                  <div class="select-semester">
+                    <a href="/bca/semester6.html"><button class="previous-semester"><center><i class="fas fa-angle-left previous-button"></i></center></button></a>
+                    <div class="current-semester">Semester 1</div>
+                    <a href="/bca/semester2.html"><button class="previous-semester"><center><i class="fas fa-angle-right next-button"></i></center></button></a>
+                  </div>
+                  <div class="subject-button">
+                  <button class="tablinks" id="defaultOpen" onclick="openSubject(event,'C')">Programming in C Lab<Label></Label></button>
+                </div>
+              </div>
+              <div class="s-w-right-content">
+                  <div  class="tabcontent" id="C">
+                      <h2>Programming in C</h2>
 
-        function replymsg(){
-            alert("Thank You for your messgae");
-        }
-
-    </script>
-</head>
-<body>
-    <div class="nav">
-        <label class="logo">CODE HUB</label>  
-        <!-- <label class="logo">LAB MASTER</label>   -->
-        <ul class=nav-links id="nav-links">
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="/bca/semester.html">SEMESTER</a></li>
-            <!-- <li><a href="#">ABOUT</a></li> -->
-            <li><a href="#section-3">FEEDBACK</a></li>
-        </ul>
-        <div class="burger" id="burger" onclick="navslide()">
-            <!-- <i class="fas fa-bars"></i>  -->
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>    
-    </div>
-
-    <div class="main-body">
-        <div class="heading-display">
-
-        </div>
-        <div class="solution-wrapper">
-            <div class="s-w-left-content">
-                .
+                      <!-- C questions start form here -->
+                      <button class="accordion accordion-C">1. Write an interactive program that will read in a +ve integer value and determine the following:
+                          a. If the integer is prime number.
+                          b. If the integer is a Fibonacci number.
+                      </button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">2. WAP in C to compute sinx = x - x<sup>3</sup>/3! + x<sup>5</sup>/5! + x<sup>7</sup>/7!.....
+                        Continue adding successive terms in the series until the value of the next term becomes smaller (in magnitude) then 10<sup>-5</sup>.
+                        Test the program for x = 1, x = 2, and x = 3. In each case display the number of terms used to obtain the final answer. </button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">3. WAP in C to generate every 3<sup>rd</sup> integer beginning with I = 2 and continue for all integers that are
+                          less then 150. Calculate the sum of those integers that are evenly divisible by 5.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">4. WAP to find whether a given year is a leap year or not. MOdify it to generate a list of leap years
+                          between two years limits given by user.
+                      </button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">5. WAP to display the following pattern:</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">6. Using Ternary/Conditional operator find the greatest among 3 number.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">7. WAP to convert a decimal number into an equivalent number of the input base. Test
+                        your program for base 2,8,10 & 16.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">8. WAP to read a number n, and print it out digit-by-digit, as a series of words. For e.g.
+                        123 would be printed as “one two three”.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">9. WAP to check whether any input +ve integer is palindrome or not.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">10. WAP to simulate a simple calculator (+ - / * %) that takes two operands and an operator
+                        as input and displays the result</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">11. WAP to find the GCD of two input +ve integer numbers.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">12. WAP to swap the values of two variables without using a third variable.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">13. Read a line of mixed text, and then write it out with all lower case and uppercase letters
+                        reversed, all digits replaced by 0s and all other characters (non-letters and non-digits)
+                        replaced by ‘*’.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">14. WAP to find the product of two matrices A and B. Display the source matrices and
+                        product matrix C in matrix format.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">15. WAP to find the product of two matrices A and B. Display the source matrices and
+                        product matrix C in matrix format.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">16. WAP to find the transpose of a matrix. Display the source and the transposed matrix in
+                        matrix format.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">17. Implement Prob. No. - 14 to 16 using functions for reading, manipulating and
+                        displaying the corresponding matrices in matrix form.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">18. WAP to sort a list of strings alphabetically using a 2-dim. Character array.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">19. WAP to display the row sum and the column - sum of an input 2- dim. Matrix. Display
+                        the source matrix with row and column sum.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">20. Write a recursive function to calculate S = 2 + 4 + 6 + 8 + …… +2N. Implement the
+                        function in a complete C program.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">21. Write a function that accepts two arguments an array and its size n. It performs Bubble
+                        up sort on the array elements. Using indirection operator ‘*’ implement this in a
+                        complete C program. Display the source and the sorted array.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">22. Using pointer, write a function that receives a character string and a character as
+                        argument. Delete all occurrences of this character in the string. The function should
+                        return corrected string with no holes.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">23. Write a function for reading character string using pointer. Calculate the length of the
+                        string (without using strlen() ). Finally print the string in reverse order, using pointer.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">24. Implement prob. No. 14 using pointers representation of 2 - dim. array.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">25. Implement prob. No. 15 using pointer representation of 2 dim. array.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">26. Implement prob. No. 16 using pointer representation of 2 dim. array.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">27. WAP to sort a list of strings into alphabetical order using array of pointers.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">28. Create records of 60 students, where each record has fields-name, roll, gpa and fees.
+                        Write a function update () to reduce the fees of those students who have obtained gpa
+                        greater than 8.5 by 25% of the original fees. Write a complete program to exercise this
+                        function in the main program and display all the records before and after updation.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">29. Define a structure that describes a hotel. It should have members that include the name,
+                        address, grade, average room charge and number of rooms. Write a function to perform
+                        the following operations:
+                        a) To print out hotels of a given grade in order of charges.
+                        b) To print out hotels with room charges less than a given value.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">30. WAP to concatenate the contents of two files into a third file.</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      <button class="accordion accordion-C">31. WAP to copy the content of one file into another file. Names of both the files are to be
+                        input as command line arguments</button>
+                      <div class="panel">
+                        <p>Here Python Code will appear.</p>
+                      </div>
+                      
+                </div>
+                <!-- Some scripts for accordion -->
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    
+                    for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                        this.classList.toggle("acc-active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                          panel.style.maxHeight = null;
+                        } else {
+                          panel.style.maxHeight = panel.scrollHeight + "px";
+                        } 
+                      });
+                    }
+                </script> 
+                    <!-- end of accordion script -->
+              </div>
+              
+          </div>    
+        <!-- section3 will add here in -->
+        <div class="section3" id="section-3">
+            <div class="feedback-content">
+                <h2>Contact Us</h2>
             </div>
-            <div class="s-w-right-content"></div>
+            <div class="feedback-form">
+                <form action="mailto:rsushant2000@gmail.com" method="POST">
+                    <input type="text" name="name" id="name" class="Name" placeholder="Name" size="55" required><br>  
+                    <input type="email" name="email" id="email" class="Email" placeholder="Email" required><br>
+                    <textarea name="feedback" id="feedback" class="feedback-msg" cols="30" rows="5" placeholder="Your Message" required></textarea><br>  
+                    <button class="send-mail">Send Message</button>
+                </form>
+            </div>
         </div>
-        
-    </div>
 
-
-    <!-- <div class="section3" id="section-3">
-        <div class="feedback-content">
-            <h2>Contact Us</h2>
-        </div>
-        <div class="feedback-form">
-            <form action="" method="POST">
-                <input type="text" name="name" id="name" class="Name" placeholder="Name" size="55" required><br>  
-                <input type="email" name="email" id="email" class="Email" placeholder="Email" required><br>
-                <textarea name="feedback" id="feedback" class="feedback-msg" cols="30" rows="5" placeholder="Your Message" required></textarea><br>  
-                <button class="send-mail">Send Message</button>
-            </form>
-        </div>
-    </div>               -->
-</body> 
-</html>
-
-
+      </div>
+      
+  </body> 
+  </html>
+  
+  
+  

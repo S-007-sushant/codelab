@@ -21,8 +21,8 @@ body{
     width: 30%;
     /* background-color:#fbfbfb; */
     background-color: white;
-    height: 300px;
-    border-radius: 12px;
+    height: 100%;
+    /* border-radius: 12px; */
 }
 .s-w-left-content button{
     display: block;
@@ -72,7 +72,7 @@ body{
 
 .select-semester{
     display: flex;
-    height: 70px;
+    height: 10vh;
     /* background-color: rgb(251,251,251); */
     background-color: white;
     border-bottom: 2px solid #ccc;
@@ -85,38 +85,41 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(251,251,251);
     text-indent: 0px;   
+    
 }
-.select-semester button.previous-semester:hover{
+/* .select-semester button.previous-semester:hover{
     background-color: #4169E1;
     outline-color: #1877f2;
     color: white;
     transition: .4s;
-}
+} */
 
-.next-semester{
-    border: 2px solid black;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-.previous-semester-arrow{
+/* .previous-semester-arrow{
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     
+} */
+.next-button, .previous-button{
+    align-items: center;
+    justify-content: center;
+    color: #1877f2;
+    display: flex;
+    font-size: 2em;
 }
-.subject-button{
-    margin-top: 20px;
+.select-semester .current-semester{
+    color: #0072b3;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .section3{
-    margin-top: 100px;
+    margin-top: 50px;
     /* height: 60vh; */
-    padding: 60px 40px 20px 40px;
+    /* padding: 60px 40px 20px 40px; */
     width: 100%;  
-    background-color: #2C7EDE;
+    background-color:#e0f0fc;
 }
 
 .tabcontent{
@@ -128,4 +131,33 @@ body{
 }
 .hidecontent{
     display: none;
+}
+.hidecontent h3{
+    color: rgb(63, 62, 62);
+}
+
+table{
+    border-collapse: collapse;
+    
+}
+td{
+    padding: 3px;
+}
+@media screen and (max-width:780px) {
+    .solution-wrapper{
+        flex-direction: column;
+        margin: -100px 40px 0 40px;
+    }
+    .s-w-right-content{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .s-w-left-content{
+        width: 100%;
+    }
+    .tabcontent {
+        padding: 5px;
+    }
+    
 }

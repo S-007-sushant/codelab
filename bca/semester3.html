@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style/semester3.css">
-  <title>Semester 3</title>
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
   <head>
@@ -15,12 +7,14 @@
       
       <link rel="stylesheet" href="/style.css">
       <link rel="stylesheet" href="/style/semester.css">
+      <link rel="stylesheet" href="/style/semester3.css">
       <link rel="stylesheet" href="/style/semester2.css">
   
           
       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-      <title>CODE HUB</title>
-      <script>
+      <script src="/script/app.js"></script>
+      <title>CODE HUB ~ Semster 3</title>
+      <!-- <script>
   
           function navslide(){
               let nav = document.getElementById('nav-links');
@@ -46,7 +40,7 @@
           // get the element with id="defaultOpen" and click on it
           document.getElementById("defaultOpen").click();
   
-      </script>
+      </script> -->
   </head>
   <body>
       <div class="nav">
@@ -73,9 +67,9 @@
           <div class="solution-wrapper">
               <div class="s-w-left-content">
                   <div class="select-semester">
-                      <button class="previous-semester"><span class="previous-semester-arrow">&#8592;</span></button>
-                      <div class="current-semster">Semester 3</div>
-                      <button class="previous-semester"><span class="previous-semester-arrow">&#8594;</span></button>
+                    <a href="/bca/semester2.html"><button class="previous-semester"><center><i class="fas fa-angle-left previous-button"></i></center></button></a>
+                    <div class="current-semester">Semester 3</div>
+                    <a href="/bca/semester4.html"><button class="previous-semester"><center><i class="fas fa-angle-right next-button"></i></center></button></a>
                   </div>
                   <div class="subject-button">
                   <button class="tablinks" id="defaultOpen" onclick="openSubject(event,'java')">OOP in Java Lab</button>
@@ -362,16 +356,267 @@ class question4{
                 </div>
                 <!-- DBMS starts from here -->
                   <div  class="tabcontent hidecontent" id="DBMS">
-                    <h3>DBMS Lab</h3>
-                    <button class="accordion">2. WAJP to take input through command line argument and do the following: a) Check whether the numebr is prime.
-                      b) Generate the reverse a number.</button>
+                    <h2>DBMS Lab</h2>
+
+                    <button class="accordion accordion-DBMS">1.	List all information about all department from emp table. .</button>
                     <div class="panel">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
+
+                    <button class="accordion accordion-DBMS">2.	List all employee names along with their salaries from emp table.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion accordion-DBMS">3.	List all department numbers, employee numbers and their managers numbers in descending order of deptno from emp table.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion accordion-DBMS">4.	List department names and locations from the dept table.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">5.	List the employees belonging to the department 20. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">6.	List the name and salary of the employees whose salary is more than 1000.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">7.	List the names of the clerks working in the department 20. .</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">8.	List the names of analysts and salesmen.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">9.	List the details of the employees who have joined before the end of September 81.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">10.	List the names of employees who are not managers. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">11.	List the names of employees whose employee number are 7369, 7521, 7839, 7934, 7788. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+                    <button class="accordion accordion-DBMS">12.	List the employee details not belonging to the department 10, 30, and 40.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">13.	List the employee name and salary, whose salary is between 1000 and 2000. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">14.	List the employee names, who are not eligible for commission.(salary having >15,000 eligible for commission</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">15.	List the employees who are eligible for commission. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">16.	List the details of employees, whose salary is greater than 2000 and commission is NULL. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">17.	List the employees whose names start with an “S” (not”s”). </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">18.	List the name, salary and PF amount of all the employees(PF is calculated as 10% of salary). </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">19.	List the empno, ename, sal in ascending order of salary. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">20.	List the employee name, salary, job and Department no in descending order of Department No and descending order of  salary. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">21.	List the employee details in ascending order of salary. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion accordion-DBMS">22.	List the employee details in descending order of salary </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion accordion-DBMS">23.	Display name, sal and commission of all employees whose monthly salary is greater than their commission.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion accordion-DBMS">24.	Select SMITH HAS WORKED IN THE POSITION OF CLERK IN DEPT 20.Display result in this format. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">25.	Generate a statement which prompts the user at runtime. The intention is to display employees hired between 2 given dates.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">26.	Define a variable representing an expression used to calculate total annual remuneration. Use the variable in a statement which finds all employees who earn $30000 a year or more.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">27.	List all the employees name and salaries increased by 15% and expressed as a whole number of dollars. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">28.	Produce the following EMPLOYEE AND JOB SMITH CLERK ALLEN SALESMAN </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">29.	Produce the following output: SMITH ( Clerk) ALLEN ( Salesman)</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">30.	Do a case sensitive search for a list of employees with a job that the user enters. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">31.	It has been discovered that the sales people in dept. 30 are not all male. Please produce the Following output. ENAME DEPTNO JOB ALLEN 30 Sales Person  </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+                    <button class="accordion accordion-DBMS">32.	Display each employees name and hiredate of dept 20.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">33.	Display each employees name, hiredate and salary review date. Assume salary review date is one year from hiredate. Output should be in ascending review date. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">34.	Print list of employees displaying just salary, if more than 1500. If exactly 1500 display “ On Target”.1500”. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">35.	Write a query which returns DAY of the week ( i.e. MONDAY) for any date entered in the format DD/MM/YY.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">36.	Write a query to calculate length of service of each employee. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">37.	Find the minimum salary of all employees. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">38.	Find the maximum, minimum, and average salaries of all employees. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">39.	List the maximum and minimum salary of each job type. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">40.	Find how many managers are in each dept.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">41.	Find the average salary and average total remuneration of each job type. Remembers sales man earn commission.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion accordion-DBMS">42.	Find out the difference between highest and lowest salary. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion accordion-DBMS">43.	Find all department s which have more than three employees</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion accordion-DBMS">44.	List department names and locations from the dept table.44.	Check whether all employee nos are unique. ( No Duplicate) </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">45.	List lowest paid employee working for each Manager. Exclude any groups where the minimum salary is less than 1000. Sort the output by salary.  </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">46.	Produce a list showing employees ‘salary grade’.(<10000 A, >10000 &20000 B) >20000 C</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">47.	Show only employee on Grade C.</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">48.	Show all emplosyee in Dallas. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">49.	List the employees name, job, salary, grade and department for everyone in the company except clerks. Sort on salary, displaying the highest first. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">50.	List the following details of employees who earn $36000 a year or who are clerks. Ename Job Annual Sal Dept no Dname Grade</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">51.	Display all employees who earn less than their managers. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+                    <button class="accordion accordion-DBMS">52.	Display all employees by name and eno along with their managers name and number. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">53.	Modify above spoliation to display KING who has no MANAGER. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">54.	Find the job that was files in the first half of 1983 and the name job that was filled in the same period in 1984. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">55.	Find all employees who have joined before their manager. EMPLOYEE HIREDATE MANAGER HIREDATE </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">56.	Find the employees who earn the highest salary in each job, type, sort in descending order of salary. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">57.	Find the employees who earn the minimum salary for their job,   Display the result in descending order of salary . </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">58.	 Find the most recently hired employees in the department. Order by hiredate. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">59.	Show the details of any employee who earns a salary greater than the average for their department. Sort in department number order. </button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <button class="accordion accordion-DBMS">60.	List all department where there are no employees</button>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+
+
                   </div>
-              
+                  <!-- Internet Technology questions -->
                   <div  class="tabcontent hidecontent" id="IT">
-                      <h3>IT Lab</h3>
+                      <h2>IT Lab</h2>
                       <p>Tokyo is the capital of Japan.</p>
                   </div>
 
@@ -395,23 +640,21 @@ class question4{
                     <!-- end of accordion script -->
               </div>
           </div>
-          
-      </div>
-  
-  
-      <!-- <div class="section3" id="section-3">
+          <!-- section3 will add here in main-body class-->
+        <div class="section3" id="section-3">
           <div class="feedback-content">
               <h2>Contact Us</h2>
           </div>
           <div class="feedback-form">
-              <form action="" method="POST">
+              <form action="mailto:rsushant2000@gmail.com" method="POST">
                   <input type="text" name="name" id="name" class="Name" placeholder="Name" size="55" required><br>  
                   <input type="email" name="email" id="email" class="Email" placeholder="Email" required><br>
                   <textarea name="feedback" id="feedback" class="feedback-msg" cols="30" rows="5" placeholder="Your Message" required></textarea><br>  
                   <button class="send-mail">Send Message</button>
               </form>
           </div>
-      </div>               -->
+      </div>
+      </div>
   </body> 
   </html>
   

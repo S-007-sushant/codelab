@@ -1,81 +1,82 @@
 .accordion {
-    background-color: #bbd8ff;
-    color: #444;
-    cursor: pointer;
-    padding: 15px;
-    padding-right:30px;
-    padding-bottom: 5px;
-    width: 97%;
-    height: 8vh;
-    overflow: hidden;
-    border: none;
-    text-align:left;
-    outline: none;
-    font-size: 14px;
-    transition: 0.4s;
-    font-weight: bold;
-    margin-top: 20px;
-    line-height: 1.3rem;    
-    border-radius: 5px;
-   
-  }
-  .accordion ol{
-    padding-left: 40px;
-  }
+  background-color: #bbd8ff;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  padding-right:30px;
+  padding-bottom: 5px;
+  width: 97%;
+  height: 8vh;
+  overflow: hidden;
+  border: none;
+  text-align:left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s;
+  font-weight: bold;
+  margin-top: 20px;
+  line-height: 1.3rem;    
+  border-radius: 5px;
+}
+.accordion ol{
+  padding-left: 40px;
+}
 
   
-  .acc-active, .accordion:hover {
-    background-color: #bbd8ff;
-    padding-right: 55px;
-    width: 100%;
-    height: 16vh;
-    overflow: hidden;
+.acc-active, .accordion:hover {
+  background-color: #bbd8ff;
+  right: 55px;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
     
-  }
- .acc-active{
-    height: 16vh;
-    overflow: hidden;
-    border-radius: 5px 5px 0 0;
-  }
-  .s-w-right-content .accordion:hover{
-    height: 16vh;
-    padding-right: 55px;
-    transition: 0.4s;
-    /* overflow: scroll; */
-  }
-  .accordion-right{
-    float: right;
-    
-  }
-  
-  .accordion:after, .accordion-right{
-    /* content: '\002B';
-    content: '\276F';
-    color:#000;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px; */
-  }
-  
-  .acc-active:after .accordion-right {
-    transform: rotate(90deg);
-    /* content: "\2212";
-    text-align: center;
-    justify-content: justify; */
-  }
-  
-  .panel {
-    
-    padding: 0px 18px;
-    background-color: #e0f0fc;
-    max-height: 0;
-    height: 100%;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    border-radius: 0 0 5px 5px;
-  }
+}
+.acc-active{
+  height: 16vh;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.s-w-right-content .accordion:hover{
+  height: 16vh;
+  padding-right: 55px;
+  transition: 0.4s;
+  /* overflow: scroll; */
+}
+.accordion-right{
+  float: right;
+}
+.panel {    
+  padding: 0px 18px;
+  background-color: #e0f0fc;
+  max-height: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border-radius: 0 0 5px 5px;
+}
 
 .codes{
   font-size: 1rem;
   color: #444;  
+}
+
+.accordion-C,.accordion-C:hover{
+  line-height: 1rem;
+  
+}
+
+@media screen and (max-width:780px){
+  .panel{
+    font-size: .8rem;
+    overflow: scroll;
+  }
+  .accordion{
+    line-height: 1.3em;
+    font-size: .8em;
+    
+  }
+  .codes{
+    font-size: .8em;
+    font-weight: bold;
+  }
 }
