@@ -373,6 +373,22 @@ label.logo{
     /* font-size: 26px; */
     font-size: 1.9rem;
 }
+.link-to-semester{
+    text-decoration: none;
+}
+
+
+.alert{
+    text-align: center;
+    padding: 10px;
+    background: #79c979;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 6vh;
+    line-height: 3vh;
+    display: none;
+}
 
 /* devices under 820 resolution */
 @media screen and (max-width:860px){
@@ -394,18 +410,22 @@ label.logo{
         float: right;
         flex-direction: column;
         width:100%;
+        /* height: 100%; */
         height: 100%;
         justify-content: right;        
         background: transparent;
         backdrop-filter: blur(10px);
         transform: translateX(-100%);
         transition: .4s;     
+        z-index: 2;
     }
     .nav-active{
+        /* height: 100%; */
         display: block;
         transform: translateX(0%);
         transition: .4s;  
         visibility: visible; 
+        /* z-index: 1; */
              
     }
 
@@ -512,5 +532,6 @@ label.logo{
 
     .section3{
         padding: 60px 2px 0px 2px;
+
     }
 }

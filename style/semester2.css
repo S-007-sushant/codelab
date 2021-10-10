@@ -143,6 +143,9 @@ table{
 td{
     padding: 3px;
 }
+a{
+    text-decoration: none;
+}
 @media screen and (max-width:780px) {
     .solution-wrapper{
         flex-direction: column;

@@ -20,4 +20,5 @@ function openSubject(evt,subjectName) {
   evt.currentTarget.className += " active";
 }
 // get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen").click();
+
