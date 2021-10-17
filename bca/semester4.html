@@ -1,46 +1,17 @@
 <!DOCTYPE html>
   <html lang="en" dir="ltr">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      
-      <link rel="stylesheet" href="/style.css">
-      <link rel="stylesheet" href="/style/semester.css">
-      <link rel="stylesheet" href="/style/semester2.css">
-      <link rel="stylesheet" href="/style/semester3.css">
-  
-          
-      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-      <script src="/script/app.js"></script>
-      <title>CODE HUB ~ Semster 4</title>
-      <!-- <script>
-  
-          function navslide(){
-              let nav = document.getElementById('nav-links');
-              nav.classList.toggle("nav-active");            
-          }
-         
-  
-          function openSubject(evt,subjectName) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent");
-  
-              for(i =0;i<tabcontent.length;i++){
-                  tabcontent[i].style.display = "none";
-              }
-  
-              tablinks = document.getElementsByClassName("tablinks");
-              for(i = 0; i < tablinks.length;i++) {
-                  tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-              document.getElementById(subjectName).style.display = "block";
-              evt.currentTarget.className += " active";
-          }
-          // get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
-  
-      </script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style/semester.css">
+    <link rel="stylesheet" href="/style/semester2.css">
+    <link rel="stylesheet" href="/style/semester3.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/script/app.js"></script>
+    <title>CODE HUB ~ Semster 4</title>
+     
   </head>
   <body>
       <div class="nav">
@@ -61,9 +32,7 @@
       </div>
   
       <div class="main-body">
-          <div class="heading-display">
-  
-          </div>
+          <div class="heading-display"></div>
           <div class="solution-wrapper">
               <div class="s-w-left-content">
                   <div class="select-semester">
@@ -72,37 +41,378 @@
                     <a href="/bca/semester5.html"><button class="previous-semester"><center><i class="fas fa-angle-right next-button"></i></center></button></a>
                   </div>
                   <div class="subject-button">
-                  <button class="tablinks" id="defaultOpen" onclick="openSubject(event,'SE')">Software Engineering Lab</button>
-                  <button class="tablinks" onclick="openSubject(event,'WPL')">Web Programming Lab</button>
-            
-                  </div>
+                  <button class="tablinks" id="defaultOpen" onclick="openSubject(event,'WPL')">Web Programming Lab</button>
+                  <button class="tablinks " onclick="openSubject(event,'SEL')">Software Engineering Lab</button>
+                  
+                </div>
               </div>
               <div class="s-w-right-content">
-                  <!-- Software Engineering Lab start form here -->
-                  <div  class="tabcontent" id="SE">
-                      <h2>Software Engineering Lab</h2>
+               <!-- Web Programming Lab starts form here -->
+                <div  class="tabcontent" id="WPL">
+                  <h2 class="subject-title">Web Programming Lab</h2>
+                  <button class="accordion accordion-WPL">1.India is a large country. Different regions observe variations in climate. The spoken language of one 
+                     state is quite different from that of another. They wear different types of garments....Tap to see Quesiton. </button>
+                  <div class="panel"><br>
+                    <p class="question-comment">India is a large country. Different regions observe variations in climate. The spoken language of one
+                      state is quite different from that of another. They wear different types of garments. They celebrate different 
+                      festivals and perform varied religious rites. People belonging to diverse cultures belong to different religious faiths.
+                      In spite of these diversities, Indians feel a sense of unity and oneness among them. Thus, we conclude that India 
+                      is a land of Unity in Diversity. 
+                      <ol type="a">
+                        <li>All the headings should be H2 and green colour.</li>
+                        <li>Main heading should be H1 and centre aligned.</li>
+                        <li>The background should be yellow colour.</li>
+                        <li>There are 10 paragraphs so each of them should be made using P tag.</li>
+                        <li>The Introduction and Conclusion paragraphs should have “Times New Roman” font, the 
+                            size should be 12 and colour should be blue. </li>
+                        <li>All the remaining paragraphs text should be pink and magenta coloured in an alternate way.</li>
+                        <li>There should be one meaningful picture in the web page with specific dimension.</li>
+                      </ol>
+                      </p>
+                      <center><h2 class="not-available">Not Available</h2></center>
+                  </div>
+                  <button class="accordion accordion-WPL">2. Create a webpage having a list as shown below: Tap to see the Question</button>
+                        <div class="panel"><br>
+                           <p class="quesiton-comment">Create a webpage having a list as shown below:</p>
+                           <ul>
+                             <li><b>Food</b>
+                              <ol type="a">
+                                <li>Fruit
+                                  <ul type="square" class="ul-square">
+                                    <li>Apple</li>
+                                    <li>Mango</li>
+                                    <li>Pear</li>
+                                  </ul>
+                                </li>
+                                <li>Vegetable
+                                  <ul class="ul-square">
+                                    <li>Potato</li>
+                                    <li>Tomato</li>
+                                    <li>Carrot</li>
+                                  </ul>
+                                </li>
+                              </ol>
+                            </li>
+                             <li><b>Dress</b>
+                              <ol type="a">
+                                <li>Ethnic wear
+                                  <ul class="ul-square">
+                                    <li>Kurta</li>
+                                    <li>Sherwani</li>
+                                  </ul>
+                                </li>
+                                <li>Western wear
+                                  <ul type="ul-square">
+                                    <li>Suit</li>
+                                    <li>Jeans</li>
+                                  </ul>
+                                </li>
+                              </ol>
+                            </li>
+                            <li><b>Sports</b>
+                              <ol type="a">
+                                <li>Indoor sport
+                                  <ul type="ul-square">
+                                    <li>Carom</li>
+                                    <li>Table Tennis</li>
+                                  </ul>
+                                </li>
+                                <li>Outdoor sport
+                                  <ul type="ul-square">
+                                    <li>Cricekt</li>
+                                    <li>Hockey</li>
+                                  </ul>
+                                </li>
+                              </ol>
+                            </li>
+                           </ul>
+                           <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">3. Create a webpage with the following: 
+                            a)  A superscript and subscript tag 
+                            b)  Pre tag 
+                            c)  Paragraph tag 
+                            d)  Anchor tag 
+                            e)  Image tag 
+                            f)   Definition list tag 
+                            g)  Marquee tag 
+                            h)  Horizontal line tag 
+                            i)   Break tag 
+                            j)   Heading tag 
+                             </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">4. Create a webpage having 10 divisions each having separate background color and text color using 
+                            <DIV> tag. At the top right corner there should be an image hyperlink opening in a new webpage.
+                            </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">5. Create a webpage with a form loaded into it and take input of three strings through three textboxes and then concatenate them without using any built-in function. </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">6. Create a webpage with two tables. First one should have 1 row and 5 columns and the second one 
+                            with 3 rows and 4 columns. The contents of the first table should be center aligned and contents of 
+                        the second table should be right aligned. Each column of the first table should have separate colors and each row of the second table should have separate colors.
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">7. Write a JavaScript program to calculate and display the aggregate and percentage of three 
+                            subjects’ ( Physics, Chemistry and Mathematics) marks along with the name of a student. The name and  individual marks input shall be taken by textbox in the webpage. 
+                            </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">8. Write a JavaScript program to search the element 4 in the array [2, 6, 4, 10, 4, 0, -2] using any 
+                            method. 
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">9. Create a framed webpage with different frames as below: <br>
+                          Contents of 1st, 3rd, 5th, 7th frame should be same again 2nd, 4th, 6th and 8th should be same. </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">10. Create a webpage to take input of a string and check whether it is a palindrome or not. </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">11. Write a program using JavaScript to display a structure as given below: <br>
+                            *<br> 
+                            * *<br> 
+                            * * *<br> 
+                            * * * * <br>
+                            * * * * *<br>
+                            </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">12. Write a program using JavaScript to take input of an array of numbers like [-4, 5, 6, -1, 10] and then sort 
+                            it in descending order.
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">13. Create a webpage to take input of a string and reverse that without using any user defined function. </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">14. Write a JavaScript program to search 10 in the array [2, 6, -5, 10, 11, 0, -2] using a binary search method.</button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">15. Write a JavaScript program to take two arrays like [3, 7, 1, 6, 2, 3] and [5, 6, 0, -3] and merge them into 
+                            third array along with that remove the repetitive elements.
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">16. Write a JavaScript program to calculate the percentage of three subjects’ (English, Mathematics, and 
+                            Science) marks along with the name of a student. The name and individual marks input shall be taken by 
+                        form in the webpage.
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">17. Create a webpage to take input of a string and count the number of vowels in it.
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">18. Create a webpage to take input of two strings and concatenate them without using any built-in function.
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">19.Create a webpage to take input of a string and then slice it into three separate strings and display that. 
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">20. Write a JavaScript program to take two arrays like [1, 3, 8, 1, 6, 2, 3] and [2, 1, 5, 6, 0, -3] and merge them 
+                            into third array along with that remove the repetitive elements.                         
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                        <button class="accordion accordion-WPL">21. Write a JavaScript program to calculate and display the aggregate and percentage of three subjects’ 
+                            (Physics, Chemistry and Mathematics) marks along with the name of a student. The name and individual 
+                        marks input shall be taken by textbox in the webpage. 
+                        </button>
+                        <div class="panel">
+                            <center><h2 class="not-available">Not Available</h2></center>
+                        </div>
+                </div>
 
-                      <button class="accordion">Question</button>
+                <div  class="tabcontent hidecontent" id="SEL">
+                      <h2 class="subject-title">Software Engineering Lab</h2>
+
+                      <!-- Software Engineering lab questions start form here -->
+                      <button class="accordion accordion-C">1. Draw use case diagram for online banking system.</button>
                       <div class="panel">
-                        <p>Here Python Code will appear.</p>
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">2. Draw use case diagram for online library system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">3. Draw use case diagram for online railway reservation system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">4. Draw use case diagram for employee information system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">5. Draw use case diagram for inventory control system</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">6.Draw use case diagram for student information system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">7. Draw use case diagram for online hotel management system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">8. Draw use case diagram for online bus reservation system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">9. Draw use case diagram for online course registration system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">10. Draw use case diagram forfor teacher information system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">11. Draw Sequence diagram for online banking system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">12. Draw Sequence diagram for online library system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">13. Draw Sequence diagram for railway reservation system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">14. Draw sequence diagram for employee information system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">15. Draw sequence diagram for inventory control system</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">16. Draw sequence diagram for student information system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">17. Draw sequence diagram for online hotel management system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">18. Draw sequence diagram for online bus reservation system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">19. Draw sequence diagram for online course registration system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">20. Draw sequence diagram for online teacher information  system</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">21. Draw activity diagram for online banking system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">22.Draw activity  iagram for online library system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">23. Draw activity diagram for online railway reservation system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">24. Draw activity diagram for employee information system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">25.Draw activity diagram for inventory control system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">26. Draw activity diagram for student information system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">27. Draw activity diagram for online hotel management system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">28. Draw activity diagram for online bus reservation system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">29. Draw activity diagram for online course registration system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">30. Draw activity diagram for online teacher information system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">31. Draw class diagram for online banking system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">32. Draw class diagram for online library system </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">33. Draw class diagram for online railway reservation system </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">34. Draw class diagram for employee information system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">35. Draw class diagram for inventory control system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">36. Draw class diagram for student information system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">37. Draw class diagram for online hotel management system. </button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">38. Draw class diagram for online bus reservation system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">39. Draw class diagram for online course registration system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
+                      </div>
+                      <button class="accordion accordion-C">40. Draw class diagram for online course registration system.</button>
+                      <div class="panel">
+                        <center><h2 class="not-available">Not Available</h2></center>
                       </div>
                     </div>
-
-                    <!-- WPL starts from here -->
-                    <div  class="tabcontent hidecontent" id="WPL">
-                        <h2>Web Programming Lab</h2>
-    
-                        <button class="accordion accordion-DBMS">Question</button>
-                        <div class="panel"> 
-                            <p>Lorem ipsum dolor sit amet,boris nisi ut.</p>
-                        </div>
-                    </div>
-
-                      
-                      
-                </div>
-                
-                
                 <!-- Some scripts for accordion -->
                 <script>
                     var acc = document.getElementsByClassName("accordion");
@@ -122,22 +432,25 @@
                 </script> 
                     <!-- end of accordion script -->
               </div>
-          </div>
-          <!-- section3 will add here in -->
+              
+          </div>    
+        <!-- section3 will add here in -->
         <div class="section3" id="section-3">
-          <div class="feedback-content">
-              <h2>Contact Us</h2>
-          </div>
-          <div class="feedback-form">
-              <form action="mailto:rsushant2000@gmail.com" method="POST">
-                  <input type="text" name="name" id="name" class="Name" placeholder="Name" size="55" required><br>  
-                  <input type="email" name="email" id="email" class="Email" placeholder="Email" required><br>
-                  <textarea name="feedback" id="feedback" class="feedback-msg" cols="30" rows="5" placeholder="Your Message" required></textarea><br>  
-                  <button class="send-mail">Send Message</button>
-              </form>
-          </div>
+            <div class="feedback-content">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="feedback-form">
+                <form action="mailto:rsushant2000@gmail.com" method="POST">
+                    <input type="text" name="name" id="name" class="Name" placeholder="Name" size="55" required><br>  
+                    <input type="email" name="email" id="email" class="Email" placeholder="Email" required><br>
+                    <textarea name="feedback" id="feedback" class="feedback-msg" cols="30" rows="5" placeholder="Your Message" required></textarea><br>  
+                    <button class="send-mail">Send Message</button>
+                </form>
+            </div>
+        </div>
+
       </div>
-      </div>
+      
   </body> 
   </html>
   
