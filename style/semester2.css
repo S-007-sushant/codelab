@@ -67,7 +67,6 @@ body{
     width: 70%;
     margin-left: 40px;
     background-color: #fbfbfb;
-    border-radius: 12px;
 }
 
 .select-semester{
@@ -146,10 +145,11 @@ td{
 a{
     text-decoration: none;
 }
-@media screen and (max-width:780px) {
+/* @media screen and (max-width:780px) { */
+@media screen and (max-width:1024px) {
     .solution-wrapper{
         flex-direction: column;
-        margin: -100px 40px 0 40px;
+        margin: -100px 20px 0 20px;
     }
     .s-w-right-content{
         width: 100%;
