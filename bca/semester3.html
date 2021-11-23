@@ -132,7 +132,7 @@ class CharacteriticsofNumber{
                         <code class="codes">
                           <pre>
 
-                            // Find the number is prime or not and reversing the numeber.
+// Find the number is prime or not and reversing the numeber.
 import java.util.Scanner;
 
 class question3{
@@ -181,7 +181,66 @@ class question3{
 
                       <button class="accordion"><p class="questions">3. Write a menu driven progaram using switch in java to perform : a) For input of 1, check whether the number is prime or not. b) For input of 3, find the factors of the number. c) For input of 5, check the number is odd or even.</p></button>
                       <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                        <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                        <code class="codes">
+                          <pre>
+
+import java.util.Scanner;
+import java.lang.*;
+class menudriven{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Enter a choise");
+		System.out.println("1.Check whether the number is prime.");
+		System.out.println("3. Find the factors of the number.");
+		System.out.println("5. Check the number is odd or even.");
+		System.out.println("6. To Exit");
+		int choise = input.nextInt();
+			switch(choise){
+			case 1: System.out.println("Enter a number to check whether the number is prime or not.");
+					int prime = input.nextInt();
+					int counter = 0;
+					for (int i = 1; i<=prime; i++) {
+						if (prime%i==0) {
+							counter++;					
+						}
+					}
+					if (counter == 2) {
+						System.out.println("The Number " +prime +" is a prime number.");				
+					}
+					else{
+						System.out.println("The number "+prime +" is not a prime number.");
+					}
+					break;
+			case 3: System.out.println("Enter a number to check the factors.");
+					int factors = input.nextInt();
+					for (int i = 1; i<=factors; i++) {
+						if (factors%i==0){
+							System.out.print(" "+i);
+
+						}
+
+					}					
+					break;
+			case 5 : System.out.println("Enter a number to check odd or even");
+						int num = input.nextInt();
+						if(num%2==0){
+							System.out.println("The number "+num +" is even.");
+						}
+						else{
+							System.out.println("The number " +num +" is odd.");
+						}
+					break;
+			case 6: System.exit(0);break;
+			default : System.out.println("Please select a valid number.");break;
+			}		
+		}	
+		
+	}
+
+                          </pre>
+                        </code>
                       </div>
 
                       <button class="accordion">4. Write a program in java to generate hexadecimal equivalent of a number without using array.</button>
