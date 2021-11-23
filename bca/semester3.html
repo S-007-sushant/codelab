@@ -88,6 +88,7 @@
                       <div class="panel">
                         <code class="codes">
                         <pre>
+
 // Java question number 1
 // Save the file as "CharacteriticsofNumber.java"
 
@@ -119,6 +120,7 @@ class CharacteriticsofNumber{
 
 	}
 }
+
                             </pre>
                         </code>
                       </div>
@@ -126,10 +128,58 @@ class CharacteriticsofNumber{
                       <button class="accordion">2. WAJP to take input through command line argument and do the following: a) Check whether the numebr is prime.
                           b) Generate the reverse a number.</button>
                       <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                        <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                        <code class="codes">
+                          <pre>
+
+                            // Find the number is prime or not and reversing the numeber.
+import java.util.Scanner;
+
+class question3{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		// args[0] = number;
+		System.out.println("Enter the number: ");
+		int number = input.nextInt();
+		int flag = 0;
+
+		if (number == 0 || number == 1){
+			System.out.println(number+" is not a prime number.");
+		}
+		else{
+			for (int i = 2; i< number;i++ ) {
+				if(number%i == 0){
+					flag = 1;
+				}
+							
+			}
+		}
+
+		if (flag == 1){
+			System.out.println(number+" is not Prime Number.");
+		}
+		else{
+			System.out.println(number+" is Prime Number");
+		}
+
+		int temp = number;
+		int rem, sum = 0;
+
+		while(number>0){
+			rem = number%10;
+			sum = sum*10 +rem;
+			number = number/10;
+		}
+		System.out.println("Reverse of the number is :"+sum);
+	}
+	
+}
+                          </pre>
+                        </code>
                       </div>
 
-                      <button class="accordion"><p class="questions">3. Write a menu driven progaram using switch in java to perform : a) For input of 1, check whether the number is prime or not. b) For input of 3, find the factor of the numer. c) For input of 5, check the number is odd or even.</p></button>
+                      <button class="accordion"><p class="questions">3. Write a menu driven progaram using switch in java to perform : a) For input of 1, check whether the number is prime or not. b) For input of 3, find the factors of the number. c) For input of 5, check the number is odd or even.</p></button>
                       <div class="panel">
                         <center><h2 class="not-available">Not Available</h2></center>
                       </div>
@@ -160,34 +210,140 @@ class question4{
                           a) Check whether two numbers are prime to each other or not. b) Find LCM of two numbers.
                       </button>
                       <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                        <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                        <code class="codes">
+                          <pre>
+import java.util.Scanner;
+class question5{
+	public static void main(String[] args) {
+		//LCM of two number enterd by user:
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter first number : ");
+		int num1 = input.nextInt();
+		System.out.print("\nEnter second number : ");
+		int num2 = input.nextInt();
+
+		int lcm = (num1>num2) ? num1 : num2;
+
+		//using while loop for continuous iteration
+		while(true){
+			if( lcm % num1 == 0 && lcm % num2 == 0 ) {
+        		System.out.printf("The LCM of " +num1 +" and " +num2 +" is : " +lcm);
+       			 break;
+			}
+			++lcm;
+		}
+	}
+}
+                          </pre>
+                        </code>
                       </div>
                       <button class="accordion">6. WAJP to create a class and exhibit the role of static functions (other than main) by declaring, defining and calling them.
                     </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion">7. WAJP to take two number inputs through command line argument and do the following:
                         a) Check whether two numbers are prime to each other or not. b)   Find LCM of two numbers
                     </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">8. WAJP to take an angle value in degrees and the compute the equivalent radians and the prove <br> 
                         sin<sup>2</sup>θ + cos<sup>2</sup>θ =1. Note 180&#176 = π<sup>c</sup>.
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+//taking angle value in degrees and converting in radian and proving it.
+import java.util.Scanner;
+class question8{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in); // creating input scanner object for taking input
+		System.out.println("Enter an angle value in degree : ");
+		int angle = input.nextInt();
+		double radian = 0, sinValue = 0, cosValue = 0; // initializing value to zero
+		radian = (angle*Math.PI)/180; //using math.pi package
+		System.out.println("The value of " +angle +" degrees in radian is : " +radian);
+		 sinValue = Math.sin(radian);
+		 cosValue = Math.cos(radian);
+		 if((sinValue*sinValue)+(cosValue*cosValue)==1)
+		 {
+		 	System.out.println("Since the given equation is proved");
+		 }
+	}
+}
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">9. WAJP to sort a list of numbers in ascending order.
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+// Arrangeing list of number in accending order by using bubble sort
+public class question9{
+	// sort the array by bubble sort technique
+	void sorting(int array[]){
+		int n = array.length;
+		for(int i = 0;i < n-1; i++){
+			for (int j= 0;j < n-i-1; j++) {
+				int temp = array[j];
+				array[j] = array[j+1];
+				array[j+1] = temp;
+			}
+		}
+	}	
+
+	//prints the array
+	void printArray(int array[]){
+		
+		int n = array.length;
+		for (int i = 0;i < n ;i++) {
+			System.out.print(array[i] +"   ");			
+		}
+	}
+
+	public static void main(String[] args) {
+		question9 obj = new question9();
+		int array[] = {20,13,10,5,2};
+
+		System.out.println("Original List is ");
+		for(int i = 0;i < array.length;i++){
+			System.out.print(array[i] +"   ");
+		}
+		System.out.println();
+		obj.sorting(array);
+		System.out.println("Sorted List is : ");
+		obj.printArray(array);
+	}
+}
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">10. WAJP to generate Pascal’s Triangle using a square matrix.
                     </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>                 
                     <button class="accordion">11. Write a program in Java to take input of two 3×3 matrices through command line argument and then: 
                         a)  Add them up and display the result 
@@ -195,30 +351,283 @@ class question4{
                         c)  Multiply them and display product.                        
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+// Program to add, subtract and multipliation of the matrixs
+
+import java.util.Scanner;
+class question11{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		int[][] array1 = new int[3][3];
+		int[][] array2 = new int[3][3];
+		int[][] result = new int[3][3];
+
+		int choice;
+		System.out.println("Select your choice : ");
+		System.out.println("1. Addition of Matrix");
+		System.out.println("2. Subtraction of Matrix.");
+		System.out.println("3. Multiplication of Matrix");
+		choice = input.nextInt();
+
+		switch(choice){
+			case 1:
+					//taking matrix 1 elements
+					System.out.println("Enter the value of Matrix 1. : ");
+					  
+					for (int i = 0;i < 3;i++) {
+						for (int j = 0;j < 3;j++) {
+							array1[i][j] = input.nextInt();							
+						}						
+					}
+					//taking matrix 2 elements 
+					System.out.println("Enter the value of Matrix 2. : ");
+					 
+					for (int i = 0;i < 3;i++) {
+						for (int j = 0;j < 3;j++) {
+							array2[i][j] = input.nextInt();							
+						}						
+					}
+
+					//adding the matrix
+					for (int i = 0;i < 3;i++) {
+						for (int j = 0; j < 3;j++) {
+							result[i][j] = array1[i][j]+array2[i][j];							
+						}						
+					}
+						System.out.println("Sum of the Matrix is : ");
+					//for displaying the array
+					for (int i = 0;i < 3;i++) {
+						for (int j = 0;j < 3;j++) {
+							System.out.print(result[i][j]+" ");							
+						}					
+						System.out.println();	
+					}
+				break;
+			case 2:
+					//taking matrix 1 elements
+					System.out.println("Enter the value of Matrix 1. : ");
+					  
+					for (int i = 0;i < 3;i++) {
+						for (int j = 0; j < 3;j++) {
+							array1[i][j] = input.nextInt();							
+						}						
+					}
+					//taking matrix 2 elements 
+					System.out.println("Enter the value of Matrix 2. : ");
+					 
+					for (int i = 0;i < 3;i++) {
+						for (int j = 0;j < 3;j++) {
+							array2[i][j] = input.nextInt();							
+						}						
+					}
+
+					//adding the matrix
+					for (int i = 0;i < 3;i++) {
+						for (int j = 0;j < 3;j++) {
+							result[i][j] = array1[i][j]-array2[i][j];							
+						}						
+					}
+						System.out.println("Difference of the Matrix is : ");
+					//for displaying the array
+					for (int i = 0;i < 3;i++) {
+						for (int j = 0;j < 3;j++) {
+							System.out.print(result[i][j] +" ");							
+						}					
+						System.out.println();	
+					}
+				break;
+			case 3:
+					int sum = 0;
+					//taking matrix 1 elements
+					System.out.println("Enter the value of Matrix 1. : ");
+					  
+					for (int i = 0;i< 3;i++) {
+						for (int j = 0;j< 3;j++) {
+							array1[i][j] = input.nextInt();							
+						}						
+					}
+					//taking matrix 2 elements 
+					System.out.println("Enter the value of Matrix 2. : ");
+					 
+					for (int i = 0;i< 3;i++) {
+						for (int j = 0;j< 3;j++) {
+							array2[i][j] = input.nextInt();							
+						}						
+					}
+
+					//multipliyng the matrix
+					for (int i = 0;i< 3;i++) {
+						for (int j = 0;j< 3;j++) {
+							for (int k = 0;k< 3;k++) {
+								sum+= array1[i][k] * array2[k][j];							
+							}
+							result[i][j] = sum;
+							sum=0;								
+						}						
+					}
+					System.out.println("Product of the Matrix is : ");
+					//for displaying the array
+					for (int i = 0;i< 3;i++) {
+						for (int j = 0;j< 3;j++) {
+							System.out.print(result[i][j]+" ");							
+						}					
+						System.out.println();	
+					}
+				break;
+			default: System.out.println("Select the correct option");
+		}
+
+	}	
+
+
+}
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">12. WAJP to count the number of words, characters in a sentence.
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+// Program to count number of charecter and word in a sentences
+import java.util.Scanner;
+class question12{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Enter a sentence : ");
+		String sentence = input.nextLine();
+		
+		int	length = sentence.length();
+		int count =1;
+		int character = 0;
+
+		for (int i = 0;i< length;i++ ) {
+			if (sentence.charAt(i) == ' ' && sentence.charAt(i+1)!=' ') {
+				count++;
+			}
+			if (sentence.charAt(i)!=' ') {
+				character++;
+			}
+		}
+
+		System.out.println("Number of words in a sentence is : "+count);
+		System.out.println("Number of character in a sentence is : " +character);
+		input.close();
+	}
+}
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">13. WAJP to take input of a sentence through command line argument and then count 
                         the number of words and vowels.                        
                     </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+
+//Program to find the number of vovel and words in a sentences
+
+import java.util.Scanner;
+class question13{
+	public static void main(String[] args) {
+	 Scanner input = new Scanner(System.in);
+
+	 System.out.println("Enter the sentences : ");
+	 String sentences = input.nextLine();
+	 int length = sentences.length();
+	 int vovel=0;
+	 int word = 1;
+
+	 for (int i = 0;i< length;i++) {
+	 	if (sentences.charAt(i) == ' '  && sentences.charAt(i+1)!=' ') {
+	 		word++;
+	 	}
+	 	if (sentences.charAt(i) == 'a' || sentences.charAt(i) == 'e' || sentences.charAt(i) == 'i' || sentences.charAt(i) == 'o' || sentences.charAt(i) == 'u' || 
+	 		sentences.charAt(i) == 'A' || sentences.charAt(i) == 'E' || sentences.charAt(i) == 'I' || sentences.charAt(i) == 'O' || sentences.charAt(i) == 'U') 
+	 	{
+	 		vovel++; 
+	 	}
+	 }
+	 System.out.println("Number of vovel occures in the sentences is : "+vovel);
+	 System.out.println("Number of words are present in the sentences is : "+word);
+
+	}
+}
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">14. WAJP to handle the Exception using try and multiple catch block; the exceptions that you will handle 
                         are, number format error, array bound error and divide by zero.                     
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+//	Exceptional Hanling Program
+
+class question14{
+	public static void main(String[] args) {
+		try{
+				int a[] = new int[10];
+				a[10]=55/0;
+				System.out.println(a[10]);
+		}
+		catch(ArithmeticException e){
+				System.out.println("Arithmetic Exception occurs." );
+		}
+		catch(ArrayIndexOutOfBoundsException e){
+				System.out.println("Array Index Out Of Bounds Exception.");
+		}
+		catch(Exception e){
+				System.out.println("FIRST ---");
+		}
+		System.out.println("Expetion java program dividing 55 by 0 ");
+	}
+
+}
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">15. WAJP to create a class called Room with two data member length and width and then implement 
                         constructor overloading in it.                    
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+//Program to construct overloading
+
+class question15{
+	static int RoomConstruction(int l, int w){
+		return l*w;
+	}
+	static double RoomConstruction(double l, double w){
+		return l*w;
+	}
+	public static void main(String[] args) {
+		int number1 = RoomConstruction(10, 5);
+		double number2 = RoomConstruction(4.5, 6.5);
+		System.out.println("int : "+number1);
+		System.out.println("double : "+number2);
+	}
+
+}
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">16. Write a program in Java to explain the role of the following: 
                         a)  Non-parameterized constructor 
@@ -227,14 +636,113 @@ class question4{
                         Take input and display the output.                        
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+// Program to demonstrate Non-Parametrized , Parameterized and copy construction
+class question17{
+
+	private int rno;
+	private String name;
+
+	//constructor to initialize roll number and name of the stuent
+	question17(int Rno, String Name){
+		rno = Rno;
+		name = Name;
+	} 
+
+	//creating a copy construction
+	question17(question17 S){
+		System.out.println("\nAfter invoking the copy consructor :");
+		rno = S.rno;
+		name = S.name;
+	}
+
+	//creatig a method that return the roll no
+	int showroll(){
+		return rno;
+	}
+
+	//creating a mthod that return the name
+	String showname(){
+		return name;
+	}
+	//class to create student objext an print roll and name of tge student 
+	public static void main(String[] args) {
+		question17 S1 = new question17(40580,"Sushant Raj");
+		System.out.println("Name of the first student : "+S1.showname());
+		System.out.println("Roll Number of the first student : "+S1.showroll());
+		//passing the parameter to the copy constructor
+		question17 S2 = new question17(S1);
+		System.out.println("Name of the First Student : " +S2.showname());
+		System.out.println("Roll Number of the second Student : "+S2.showroll());
+		
+	}
+}
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">17. WAJP to create a class called Fraction with data member numerator and denominator; take input 
                         (through command line argument) of two fractions and then add, subtract, multiply and divide, finally 
                     display the result in reduced term.                    
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+// This is quesiton 17 but mistakenly it is named as quesotion16
+
+class question16{
+
+	double numerator,denominator;
+
+		question16(int a , double b){
+			numerator = a;
+			denominator = b;
+		} 
+
+		question16(int x, int y){
+			numerator = x;
+			denominator = y;
+		}
+
+		question16(double m,double n){
+			numerator = m;
+			denominator = n;
+		}
+
+		void display(){
+			 double fraction = numerator/denominator;
+			 double add = numerator+denominator;
+			 double subtract = numerator - denominator;
+			 double multiply = numerator*denominator;
+
+			 System.out.println("Fraction = "+fraction);
+			 System.out.print("Addition = "+add);
+			 System.out.println("Subtraction = "+subtract);
+			 System.out.println("Multiplicaiton = "+multiply);
+		}
+
+	public static void main(String[] args) {
+
+		question16 f1 = new question16(1,1.1);
+		System.out.println();
+		f1.display();
+
+		question16 f2 = new question16(10,10);
+		System.out.println();
+		f2.display();
+
+		question16 f3 = new question16(10.1,11.1);
+		System.out.println();
+		f3.display();
+
+	}
+}
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">18. Write a program in Java to create a class for Employee having 2 data member code and name. Then 
                         create 3 classes Officer, AdminStaff and MStaff. The Officer class has data members designation 
@@ -242,30 +750,403 @@ class question4{
                         two sub-classes Regular and Casual. The Regular staff has data members level and consolidated-pay and Casual has data member daily-wage. Take all inputs through constructors and write appropriate methods for displaying one data for each type of class.                    
                     </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                       <code class="codes">
+                          <pre>
+
+                            class Empolyee{ //Empolyee class 
+
+	int code;
+	String name;
+
+	Empolyee(int code, String name){ // Constructor of Employee class
+		this.code = code;
+		this.name = name;
+	}
+
+	void empdisplay(){ //display function of Empolyee class
+		System.out.println("Empolyee Code is : " +code);
+		System.out.println("Empolyee Name is : "+name);
+	}
+}
+class Officer{ // Officer cladd 
+	String designation;
+	float payScale;
+
+	Officer(String designation, float payScale){ // Constructor of OFficer Class 
+		this.designation = designation;
+		this.payScale = payScale;
+	}
+	void officedisplay(){ //display funciton of officer class 
+		System.out.println("Officer designation is : " +designation);
+		System.out.println("Officer Pay Scale is : "+payScale);
+	}
+
+}
+class AdminStaff{ // Admin Staff class 
+	char grade;
+	float payBand;
+
+	AdminStaff(char grade, float payBand){ // Constructor of AdminStaff class
+		this.grade = grade;
+		this.payBand = payBand;
+	}
+	void admindisplay(){ // display funciton of AdminStaff class
+		System.out.println("Admin Staff grade is : "+grade);
+		System.out.println("Admin Staff PayBand is : "+payBand);
+	}
+}
+class MStaff{ // MStaff class
+	String department;
+
+	MStaff(String department){ //Constructor of MStaff clss
+		this.department = department;
+	}
+
+	void mstaffdisplay(){ // display funciton of Mstaff class
+			System.out.println("MStaff department is : "+department);
+		}
+
+	class Regular {//inner class Regular is a subclass of MStaff class
+		int level;
+		float consolidatedPay;
+
+		Regular(int l, float consol){  //constructor of regular clss
+		level = l;
+		consolidatedPay = consol;
+		}
+		void regulardisplay(){ // display function of regular class 
+			System.out.println("MStaff Regular level : "+level);
+			System.out.println("MStaff Regular consolidatedPay : "+consolidatedPay);
+		}
+
+	}
+
+	class Casual{ //inner class Casual is a subclass of MStaff class
+		int dailyWage;
+
+		Casual(int dailyWage){ // constructor of casual class
+			this.dailyWage = dailyWage;
+		}
+		void casualDisplay(){ // display function of casual class
+			System.out.println("MStaff Casual dailyWage is : "+dailyWage);
+		}
+	}
+}
+
+class question18{
+
+	public static void main(String[] args) {
+		Empolyee emp = new Empolyee(480,"Sushant Raj"); // object emp of Empolyee class .
+		emp.empdisplay(); // calling display fuction of Empolyee class.
+
+		Officer officers = new Officer("Manager",5200); // ohject officers of Officers class.
+		officers.officedisplay(); // calling display function of officers class.
+
+		AdminStaff adminstaf = new AdminStaff('A',120000); // object adminstaf of AdminStaff class.
+		adminstaf.admindisplay(); // calling display funciton of adminstaff class.
+
+		MStaff mstaff = new MStaff("IT");
+
+		MStaff.Regular regular = mstaff.new Regular(5,52); //accessing the inner class form outer class.
+		regular.regulardisplay(); // calling the inner class of MStaff.
+		
+		MStaff.Casual casual = mstaff.new Casual(4000); // accessing the inner class fron outer class MStaff.
+		casual.casualDisplay(); // calling the inner calss Casual of MStaff class
+	}
+}
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion">19. WAJP to design a class called Account using the inheritance and static that show all function of bank 
                         (withdrawal, deposit) and generate account number dynamically.                    
                   </button>
                   <div class="panel">
                     <center><h2 class="not-available">Not Available</h2></center>
+                    <code class="codes">
+                      <pre>
+
+/*WAJP to design a class called account using the inheritance
+and static that show the all function of bank
+(withDrawal and deposite) generate account number dynamically*/
+
+import java.util.Scanner;
+// import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom; 
+
+class Account{ // creating account class having detail of the the customer
+	public int intialAmount;
+	public String name;
+	public long accountnumber;
+	public int age;
+	public String sex;
+	public int pin;
+
+	// creating constructor class for assigning values to it
+	Account(int intialAmount, String name, long accountnumber, int pin){ 
+		this.intialAmount = intialAmount;
+		this.name = name;
+		this.accountnumber = accountnumber;
+		this.pin = pin;
+	}
+
+	void withDrawalMoney(int x){
+		if (intialAmount < 0) {
+			System.out.println("Can't withdrawal because there is zero balance in your account.");
+		}
+		else{
+
+			if (x>intialAmount) {
+				System.out.println("Not sufficient ammount in your account.");
+			}
+			else{
+				intialAmount = intialAmount-x;
+				System.out.println("Money has been debited from your bank.");
+				System.out.println("\tRs " +x);
+				System.out.println("Please Collect your money.");
+			}			
+		}
+		
+	}	
+	void accountDisplay(){
+		System.out.println("....User Account Detail.....");
+		System.out.println("User : "+name);
+		System.out.println("Account number : "+accountnumber);
+		System.out.println("Available Balance: "+intialAmount);
+		System.out.println("");
+	}
+	void depositeMoney(int x){
+		intialAmount = intialAmount+x;
+	}
+}
+class question19{
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+
+		int randomaccnumber = ThreadLocalRandom.current().nextInt(500000,600000);
+		Account sushant = new Account(50000,"Roushan",randomaccnumber,4545);
+		
+		int option;
+		// withdrawalmoney,depositeMoney; 
+
+		System.out.println("\t\t---------------BANK OF INDIA ---------------");
+		System.out.println("\n\tWELCOME TO BANK OF INDIA\n");
+		
+			do{
+						System.out.println("WELLCOME "+sushant.name);
+						System.out.println("1.Withdrawal Money.");
+						System.out.println("2.Deposite Money");
+						System.out.println("3.Check Status.");
+						System.out.println("4.Exit");
+						option = input.nextInt();
+
+				switch(option){
+						
+
+				case 1: System.out.println("Withdrawl Money.");
+						System.out.println("User : "+sushant.name);
+						System.out.println("Available balance: "+sushant.intialAmount);
+						System.out.print("Enter the amount to be withdrawal : ");
+						int withDrawalMoney = input.nextInt();
+						sushant.withDrawalMoney(withDrawalMoney);
+						System.out.println("THANK YOU! VISIT AGAIN");break;
+			
+				case 2:	System.out.print("Ammount to be deposite : ");
+						int depositeMoney = input.nextInt();
+						sushant.depositeMoney(depositeMoney);
+						System.out.println("\nMoney has been successfully credited");
+						System.out.println("THANK YOU! VISIT AGAIN");break;
+
+				case 3: sushant.accountDisplay();
+						System.out.println("THANK YOU! VISIT AGAIN\n");break;
+
+				case 4: break;
+
+				default: System.out.println("Invalid Selection !!");
+					 	System.out.println("Please select a valid option.");
+					 	break;
+			}
+			}while(option!=4);
+		input.close();
+	}
+}
+
+                      </pre>
+                    </code>
                   </div>
                   <button class="accordion">20. WAJP to design an application Password.java that produces and prints a random password depending 
                     upon name of an individual. If the input is Abdul Kalam then the password would be 33421LAM. 
                     Note: take the first name A=1, B=2, D=4, U=21 where 2+1=3, and L=12, where 1+2=3; so the number comes to be 12433, so you can find out. 
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+import java.util.Scanner;
+class question20{
+private static void question20() {
+        while (true) {
+            System.out.print("Enter your full name :- ");
+            var name = new Scanner(System.in).nextLine();
+            if (name.equals("0")) System.exit(0);
+            var password = new StringBuilder();
+            var splitName = returnSplitName(name.toUpperCase());
+
+
+            var nameToNumber = returnNumber(splitName[0]);
+            var nameToLast3Digits = returnLast3DigitOfSurname(splitName);
+
+//        Merging Password
+            password.append(nameToNumber).append(nameToLast3Digits);
+            System.out.println("Your password to given name is :-\n" + password);
+            System.out.println("Press 0 to exit !!!");
+        }
+    }
+
+    private static String returnLast3DigitOfSurname(String[] name) {
+        StringBuilder password = new StringBuilder();
+        var pos = 0;
+        for (var n : name) {
+            if (pos != 0) {
+                var revName = new StringBuilder();
+                for (int i = 1; i <= 3; i++) {
+                    revName.append(n.charAt(n.length() - i));
+                }
+                password.append(revName.reverse());
+            }
+            pos++;
+        }
+        return password.toString();
+    }
+
+    private static String returnNumber(String name) {
+        var password = new StringBuilder();
+        for (var i : name.toCharArray()) {
+            var op = ((int) i - 64);
+            if (op >= 10) {
+                var sum = 0;
+                var digits = String.valueOf(op);
+                for (var d : digits.toCharArray()) {
+                    sum += Integer.parseInt(String.valueOf(d));
+                }
+                password.append(sum);
+            } else {
+                password.append(op);
+            }
+        }
+        return password.reverse().toString();
+    }
+
+    private static String[] returnSplitName(String name) {
+        return name.split("\\s+");
+    }
+public static void main(String[] args) {
+
+    question20 obj = new question20();
+    obj.question20();
+        
+    }
+}
+
+                          </pre>
+                        </code>
                   </div>
                   <button class="accordion" >21. WAJP to draw a format like :                   
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+// pattern problem: 
+/*
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+*/
+class question21{
+	public static void main(String[] args) {
+		
+
+		for (int i = 0; i < 5; i++) {
+            for (int space = 1; space <= (4 - i); space++)
+                System.out.print(" ");
+
+            for (int j = 1; j <= i; j++)
+                System.out.print("*");
+
+            for (int j = 2; j <= i; j++)
+                System.out.print("*");
+
+            System.out.println("");
+        }
+        //            lower loop
+        for (int i = 3; i >= 1; i--) {
+            for (int space = 1; space <= (4 - i); space++)
+                System.out.print(" ");
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 2; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+		
+	}
+}
+                          </pre>
+                        </code>
                   </div>
                   <button class="accordion">22. WAJP to take a string count all vowels and then delete the same from the string.
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+                            import java.util.Scanner;
+
+public class question22 {
+	
+	public static void count(String str) {
+		int count=0;`
+		for (int i=0 ; i< str.length(); i++){
+	           char ch = str.charAt(i);
+	           if(ch == 'a'|| ch == 'e'|| ch == 'i' ||ch == 'o' ||ch == 'u' || ch == 'A'|| ch == 'E'|| ch == 'I' ||ch == 'O' ||ch == 'U'){
+	              count ++;
+	           }
+	    }
+	    System.out.println("Number of vowels in the given sentence is "+count);
+	}
+	   public static void main(String args[])
+	   {
+	       String str1, str2;
+	       Scanner scan = new Scanner(System.in);
+	       
+	       System.out.print("Enter any String to delete vowels : ");
+	       str1 = scan.nextLine();
+	       
+	       System.out.println("\nBefore Removing Vowels, String is : \" "+ str1 +" \" ");
+	       count(str1);
+	       
+	       str2 = str1.replaceAll("[aeiouAEIOU]", "");
+	           
+	       System.out.println("\nAfter Removing Vowels, String is : \" "+ str2 +" \" ");
+	    }
+}
+
+
+                          </pre>
+                        </code>
                   </div>
                   <button class="accordion">23. Write a Patient class which inherits from the Person class. Patient can again be of two types,
                     indoor and outdoor. The Patient class requires the following: 
@@ -279,20 +1160,222 @@ class question4{
                     h)  a method to calculate the medical fees (for both indoor and outdoor patient).                    
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+/*22. Write a Patient class which inherits from the Person class. Patient can again be of two types,
+indoor and outdoor. The Patient class requires the following: 
+a)  a variable to store the patient ID for the patient 
+b)  a variable to store the department of hospital 
+c)  a variable to store the ward of hospital 
+d)  a variable to store the patient 's date of joining the hospital 
+e)  a variable to store the patient 's address 
+f)   a variable to store the medical fees that the patient pays 
+g)  constructor methods, which initialize the variables 
+h)  a method to calculate the medical fees (for both indoor and outdoor patient) 
+*/
+
+import java.util.Scanner;
+import java.util.Date;
+
+class Patient extends Person{
+	int patientId;	//Patient Id 
+	String patientName;	//	Patient Name
+	String department;	//department 
+	int ward;	//ward number
+	String address; // address of the patient
+	int fees;	// total fees 
+	int place;	// place such as indoor or outdoor
+	String dob;	// date of joining will show the time whenn the patient login
+
+
+
+	Patient(int patientID,String patientName, String department, int ward, String address, int place,String dob){
+		this.patientId = patientID;
+		this.patientName = patientName;
+		this.department =department;
+		this.ward = ward;
+		this.address = address;
+		this.place = place;
+		this.dob = dob;
+
+	}
+	// fuction for calculating fees
+	void calculatefees(int x){
+		if (x==1) {
+			this.fees = 720;			
+		}
+		else if (x==2) {
+			this.fees = 520;
+		}
+			else System.out.println("Please select correct place !");
+	}
+
+	// Function for displaying output
+	void displayInfo(){
+		System.out.println();
+		System.out.println("Patient Name : "+this.patientName);
+		System.out.println("Patient Id   : "+this.patientId);
+		System.out.println("Patient Ward : "+this.ward);
+		System.out.println("Total Fees   :"+this.fees);
+		System.out.println("Date of Joining : "+this.dob);
+	}
+
+	class outdoor {
+		int outfees = 420;
+	}
+
+	class indoor{
+		int infees = 560;
+	}
+
+	//Main class start from here //
+	
+}
+
+class Person{
+	Person sushant;
+
+}
+
+class questoin23{
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		Date date = new Date();
+		Patient patient;
+		
+		System.out.print("Enter the Patient ID : ");
+		int pId = input.nextInt();
+
+		System.out.print("Enter the Patient Name : ");
+		String pName = input.next();
+
+		System.out.print("Enter the Department : ");
+		String pDepartment = input.next();
+
+		System.out.print("Enter the yard number : ");
+		int pYard = input.nextInt();
+
+		System.out.print("Enter the address : ");
+		String paddress = input.next();
+
+		System.out.println("Select the Place : ");
+		System.out.println("1.Outdoor.");	
+		System.out.println("2.Indoor.");
+		int place = input.nextInt();
+
+		patient = new Patient(pId,pName,pDepartment,pYard,paddress,place,date.toString());
+		patient.calculatefees(place);
+		patient.displayInfo();		
+	}
+}
+
+                          </pre>
+                        </code>
                   </div>                 
                   <button class="accordion">24.WAJP to take a string as password and check whether it contains at least two numbers, 3 alphabets 
                     and no space in it. If any contrary throw message.                 
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+/*23. WAJP to take a string as password and check whether it contains at least two numbers, 3 alphabets 
+	and no space in it. If any contrary throw message. 
+*/
+import java.util.Scanner;
+class question24{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		String password;
+		int countnum = 0,countalph = 0,passlength,countspace = 0;
+
+		System.out.print("Enter password : ");
+		password = input.next();
+
+		void passCheck(password){
+			for (int i = 0;i< password.length() ;i++ ) {
+			char ch = password.charAt(i);
+			if(Character.isWhitespace(password.charAt(i))){
+				countspace++;
+			}
+			if (password.charAt(i) >='A' && (password.charAt(i) <='z')){
+				countalph++;
+			}
+			if(password.charAt(i)>=0 && password.charAt(i)<=9) {
+				countnum++;
+			}
+		}
+
+		if (countnum< 2 && countalph< 3 && countspace>0) {
+				System.out.println("Password requirements doesn't match ! ");
+		}
+		else {
+			System.out.println("Password requirements matched.");
+		}
+
+		System.out.println("Requirements : ");
+		System.out.println("At least 2 number.");
+		System.out.println("At least 3 alphabets.");
+		System.out.println("And no Space.");
+		}
+	}
+}
+
+                          </pre>
+                        </code>
                   </div>
                   <button class="accordion">25. Write a program in Java to create a class called Rational having two data members for numerator and 
                     denominator. Take two inputs of rational numbers and perform multiplication and division. Display 
                   the result in reduced form.                   
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+                            /*24. Write a program in Java to create a class called Rational having two data members for numerator and 
+	denominator. Take two inputs of rational numbers and perform multiplication and division. Display 
+the result in reduced form. 
+*/
+
+import java.util.Scanner;
+class question25{
+
+	float numerator,denominator;
+
+	static void calculate(float num1,float dnum1,float num2,float dnum2){
+		float multi = (num1/dnum1)*(num2/dnum2);
+		float div = (num1/dnum2)/(num2/dnum2); 
+
+		System.out.println("\nMultiplication of two Rational number is : "+multi);
+		System.out.println("Division of two Rational number is : "+div);
+
+	}
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter Numerator of first Numebr : ");
+		int n1 = input.nextInt();
+
+		System.out.print("Enter denumerator of first Numebr : ");
+		int d1 = input.nextInt();
+
+		System.out.print("Enter Numerator of Second Numebr : ");
+		int n2 = input.nextInt();
+
+		System.out.print("Enter Numerator of Second Numebr : ");
+		int d2 = input.nextInt();
+
+		calculate(n1,d1,n2,d2);
+	}
+}
+                          </pre>
+                        </code>
                   </div>
                   <button class="accordion">26. Write a program in Java to print a format like:
                     <pre>
@@ -303,7 +1386,36 @@ class question4{
                     </pre>
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+// This is question 26
+import java.util.concurrent.ThreadLocalRandom; 
+class question26{
+	public static void main(String[] args) {
+
+        int radomnum = ThreadLocalRandom.current().nextInt(500000,600000); 
+        System.out.println(radomnum);
+
+		System.out.println("");		
+		for (int i = 4; i >= 1; i--) {
+            for (int space = 1; space <= (4 - i); space++)
+                System.out.print(" ");
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 2; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+	}
+}
+
+                          </pre>
+                        </code>
                   </div>
                   <button class="accordion">27. Write a class called Shape which contains a user-defined interface for Computation, which 
                     contains methods for calculation of area, perimeter and volume. Write four classes for circle, rectangle, sphere and rectangular parallelepiped, and all these classes inherit from Shape. Now take input for the following: 
@@ -313,7 +1425,163 @@ class question4{
                     d) Radius of sphere and compute its area and volume.  
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+                            /*26.Write a class called Shape which contains a user-defined interface for Computation,    which 
+contains methods for calculation of area, perimeter and volume. Write four classes for circle, rectangle, sphere and rectangular parallelepiped, and all these classes inherit from Shape. Now take input for the following: 
+a)   radius of circle and compute its area and perimeter 
+b)  Length and breadth of rectangle and compute its area and perimeter 
+c)   Length, breadth and height for rectangular parallelepiped and compute its area and 
+    volume 
+d)  Radius of sphere and compute its area and volume
+
+**Area of circle = r2, perimeter of circle = 2*π*r , area of sphere = 4* π*r, 
+volume of sphere = 4/3* π *r3, volume of rectangular parallelepiped = l*b*h , area of rectangular parallelepiped = 2( l*b + b*h + h*l ) .
+*/
+
+interface Computation {
+     public static void main(String[] args) {
+        var circle = new Circle(2);
+        circle.Area();
+        circle.perimeter();
+
+        System.out.println();
+
+        var rectangle = new Rectangle(2, 6);
+        rectangle.Area();
+        rectangle.perimeter();
+
+        System.out.println();
+
+        var parallelepiped = new ParallelPiped(3, 4, 7);
+        parallelepiped.volume();
+        parallelepiped.Area();
+
+        System.out.println();
+
+        var sphere = new Sphere(45);
+        sphere.Area();
+        sphere.volume();
+    }
+
+    void Area();
+
+    void perimeter();
+
+    void volume();
+
+}
+
+class Shape implements Computation {
+
+    @Override
+    public void Area() {
+        System.out.println("Area of " + this.getClass().getName().split("\\.")[0] + " is :- ");
+    }
+
+    @Override
+    public void perimeter() {
+//        LabQuestion.Rectangle
+        System.out.println("Perimeter of " + this.getClass().getName().split("\\.")[0] + " is :- ");
+    }
+
+    @Override
+    public void volume() {
+        System.out.println("Volume of " + this.getClass().getName().split("\\.")[0] + " is :- ");
+    }
+}
+
+class Circle extends Shape {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public void Area() {    
+        super.Area();
+        var area = Math.PI * Math.pow(radius, 2);
+        System.out.println(area);
+    }
+
+    @Override
+    public void perimeter() {
+        super.perimeter();
+        var perimeter = 2 * Math.PI * radius;
+        System.out.println(perimeter);
+    }
+}
+
+class Rectangle extends Shape {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public void Area() {
+        super.Area();
+        var area = length * width;
+        System.out.println(area);
+    }
+
+    @Override
+    public void perimeter() {
+        super.perimeter();
+        var parameter = 2 * (length + width);
+        System.out.println(parameter);
+    }
+}
+
+class Sphere extends Shape {
+    private double radius;
+
+    public Sphere(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public void Area() {
+        super.Area();
+        var area = 4 * Math.PI * Math.pow(radius, 2);
+        System.out.println(area);
+    }
+
+    @Override
+    public void volume() {
+        super.volume();
+        var volume = (4 / 3) * (Math.PI * Math.pow(radius, 3));
+        System.out.println(volume);
+    }
+}
+
+class ParallelPiped extends Shape {
+    private double length;
+    private double width;
+    private double height;
+
+    public ParallelPiped(double length, double width, double height) {
+        this.length = length;
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    public void volume() {
+        super.volume();
+        var volume = 2 * ((length * width) + (width * height) + (height * length));
+        System.out.println(volume);
+    }
+}
+
+                          </pre>
+                        </code>
                   </div>
                   <button class="accordion">28. Write a class called Employee, which requires the following:
                     <ol type="a">
@@ -340,17 +1608,217 @@ class question4{
                     
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                     <code class="codes">
+                          <pre>
+
+/*27. Write a class called Employee, which requires the following:
+a.  A variable to store the employee name
+b.  A variable to store department 
+c.  A variable to store city
+d.  A variable to store basic salary 
+e.  A method to calculate the salary of employee
+a.  If the city is metro then HRA would be 30% else 20%
+b.  If the employee ID contain M then DA would be 120%,if S then DA would be 110%,if A then DA would be 100%,and if C then DA would be 99%
+f.  Constructor method, which initialize the variables
+g.  A variable to store the employee ID
+a.  Employee ID should be of format EMPM1234, EMPS1234, EMPA1234, EMPC1234, where M=manager, S=supervisor, A=analyst, C=clerk; number can be any no. but first three characters should be EMP.
+*/
+
+import java.util.regex.Pattern;
+
+class Employee {
+
+    // main class
+     public static void main(String[] args) {
+        var emp = new Employee("EMPM1234", "Nilay", "X", "metro", 2000);
+        System.out.println("Salary of the employee is : ");
+        emp.calculateSalary();
+    }
+    //main clss over
+    private String employeeId;
+    private String employeeName;
+    private String employeeDepartment;
+    private String employeeCity;
+    private double employeeSalary;
+
+    /**
+     * @param employeeId         Only in format EMP with M=manager, S=supervisor, A=analyst, C=clerk with 4 digit number
+     * @param employeeName       name
+     * @param employeeDepartment department
+     * @param employeeCity       City
+     * @param employeeSalary     salary
+     */
+    public Employee(String employeeId, String employeeName, String employeeDepartment, String employeeCity, double employeeSalary) {
+        this.employeeId = checkEmployeeId(employeeId.toUpperCase());
+        this.employeeName = employeeName;
+        this.employeeDepartment = employeeDepartment;
+        this.employeeCity = employeeCity;
+        this.employeeSalary = employeeSalary;
+    }
+
+    public void calculateSalary() {
+        var total_salary = 0.0;
+        var HRA = (this.employeeCity.toLowerCase().equals("metro")) ? 30 : 20;
+        var da = getDA(employeeId);
+        if (da != 0) {
+            total_salary = (employeeSalary - (employeeSalary * ((double) HRA / 100))
+                            + (employeeSalary * ((double) da / 100))
+            );
+            System.out.println(total_salary);
+        }
+    }
+
+    private int getDA(String employeeId) {
+        var patterM = ".{3}M.{4}";
+        var patterS = ".{3}S.{4}";
+        var patterA = ".{3}A.{4}";
+        var patterC = ".{3}C.{4}";
+        if (Pattern.matches(patterM, employeeId)) return 120;
+        if (Pattern.matches(patterS, employeeId)) return 110;
+        if (Pattern.matches(patterA, employeeId)) return 100;
+        if (Pattern.matches(patterC, employeeId)) return 90;
+        return 0;
+    }
+
+    private String checkEmployeeId(String employeeId) {
+        try {
+            if (Pattern.matches("EMP[MSAC]\\d{4}", employeeId))
+                return employeeId;
+            else throw new WrongEmployeeException("Pattern don't not match ..");
+        } catch (WrongEmployeeException exception) {
+            exception.printStackTrace();
+            return "";
+        }
+    }
+}
+
+public class question28 {
+   
+}
+
+class WrongEmployeeException extends Exception {
+    public WrongEmployeeException(String message) {
+
+    }
+}
+
+                          </pre>
+                        </code>
                   </div>
 
                   <button class="accordion">29. WAJP  to create 4 threads and show exhibit their execution after the call of the “start ()” method.</button>
                     <div class="panel">
-                     <center><h2 class="not-available">Not Available</h2></center>
+                     <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+                            
+class question29 {
+  public static void main(String[] args) {
+//        28
+      question29();
+  }
+  private static void question29() {
+      Thread t1 = new Thread(() -> {
+          for (int i = 0; i <= 10; i++) System.out.println("In t1");
+      });
+      Thread t2 = new Thread(() -> {
+          for (int i = 0; i <= 10; i++) System.out.println("In t2");
+      });
+      Thread t3 = new Thread(() -> {
+          for (int i = 0; i <= 10; i++) System.out.println("In t3");
+      });
+      Thread t4 = new Thread(() -> {
+          for (int i = 0; i <= 10; i++) System.out.println("In t3");
+      });
+      try {
+          t1.run();
+          Thread.sleep(100);
+          t2.run();
+          Thread.sleep(100);
+          t3.run();
+          Thread.sleep(100);
+          t4.run();
+      } catch (Exception e) {
+          e.printStackTrace();
+      }
+  }
+}
+
+                          </pre>
+                        </code>
                   </div>
 
                   <button class="accordion">30.Write a program in java to create 3 threads and exhibits their behavior by changing their priorities in  the “main” thread. Display the possible output.</button>
                     <div class="panel">
-                     <center><h2 class="not-available">Not Available</h2></center>
+                     <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+                            class question30{
+    void main(String[] args) {
+         void question30() throws Exception {
+        var t1 = new Thread(() -> {
+            for (var i = 0; i <= 5; i++) {
+                System.out.println("t1");
+                try {
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }, "Thread One");
+
+        var t2 = new Thread(() -> {
+            for (var i = 0; i <= 5; i++) {
+                System.out.println("t2");
+                try {
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }, "Thread Two");
+        var t3 = new Thread(() -> {
+            for (var i = 0; i <= 5; i++) {
+                System.out.println("t3");
+                try {
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }, "Thread Three");
+
+        System.out.println("T1 name " + t1.getName());
+        System.out.println("T2 name " + t2.getName());
+        System.out.println("T3 name " + t3.getName());
+
+        t1.setPriority(Thread.MAX_PRIORITY);
+        t1.start();
+        Thread.sleep(10);
+
+        t2.setPriority(Thread.MIN_PRIORITY);
+        t2.start();
+
+        Thread.sleep(10);
+
+        t3.setPriority(6);
+        t3.start();
+
+
+        t1.join();
+        t2.join();
+        t3.join();
+
+        System.out.println("This is the end of Thread here..");
+    
+    }
+}
+
+                          </pre>
+                        </code>
                   </div>
                       
                 </div>
@@ -361,78 +1829,150 @@ class question4{
                     <button class="accordion accordion-DBMS">1.	List all information about all department from emp table. .</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">2.	List all employee names along with their salaries from emp table.</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">3.	List all department numbers, employee numbers and their managers numbers in descending order of deptno from emp table.</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">4.	List department names and locations from the dept table.</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">5.	List the employees belonging to the department 20. </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">6.	List the name and salary of the employees whose salary is more than 1000.</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">7.	List the names of the clerks working in the department 20. .</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">8.	List the names of analysts and salesmen.</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">9.	List the details of the employees who have joined before the end of September 81.</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">10.	List the names of employees who are not managers. </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">11.	List the names of employees whose employee number are 7369, 7521, 7839, 7934, 7788. </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     
                     <button class="accordion accordion-DBMS">12.	List the employee details not belonging to the department 10, 30, and 40.</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">13.	List the employee name and salary, whose salary is between 1000 and 2000. </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">14.	List the employee names, who are not eligible for commission.(salary having >15,000 eligible for commission</button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">15.	List the employees who are eligible for commission. </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">16.	List the details of employees, whose salary is greater than 2000 and commission is NULL. </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">17.	List the employees whose names start with an “S” (not”s”). </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">18.	List the name, salary and PF amount of all the employees(PF is calculated as 10% of salary). </button>
                     <div class="panel">
                       <center><h2 class="not-available">Not Available</h2></center>
+                       <code class="codes">
+                          <pre>
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">19.	List the empno, ename, sal in ascending order of salary. </button>
                     <div class="panel">
