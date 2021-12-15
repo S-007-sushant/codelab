@@ -813,7 +813,7 @@ class question16{
                        <code class="codes">
                           <pre>
 
-                            class Empolyee{ //Empolyee class 
+class Empolyee{ //Empolyee class 
 
 	int code;
 	String name;
@@ -921,7 +921,7 @@ class question18{
                         (withdrawal, deposit) and generate account number dynamically.                    
                   </button>
                   <div class="panel">
-                    <center><h2 class="not-available">Not Available</h2></center>
+                    <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                     <code class="codes">
                       <pre>
 
@@ -1172,7 +1172,7 @@ class question21{
                      <code class="codes">
                           <pre>
 
-                            import java.util.Scanner;
+import java.util.Scanner;
 
 public class question22 {
 	
@@ -1397,8 +1397,8 @@ class question24{
                      <code class="codes">
                           <pre>
 
-                            /*24. Write a program in Java to create a class called Rational having two data members for numerator and 
-	denominator. Take two inputs of rational numbers and perform multiplication and division. Display 
+/*24. Write a program in Java to create a class called Rational having two data members for numerator and 
+denominator. Take two inputs of rational numbers and perform multiplication and division. Display 
 the result in reduced form. 
 */
 
@@ -1488,7 +1488,7 @@ class question26{
                      <code class="codes">
                           <pre>
 
-                            /*26.Write a class called Shape which contains a user-defined interface for Computation,    which 
+/*26.Write a class called Shape which contains a user-defined interface for Computation,    which 
 contains methods for calculation of area, perimeter and volume. Write four classes for circle, rectangle, sphere and rectangular parallelepiped, and all these classes inherit from Shape. Now take input for the following: 
 a)   radius of circle and compute its area and perimeter 
 b)  Length and breadth of rectangle and compute its area and perimeter 
@@ -1815,7 +1815,7 @@ class question29 {
                       <code class="codes">
                           <pre>
 
-                            class question30{
+class question30{
     void main(String[] args) {
          void question30() throws Exception {
         var t1 = new Thread(() -> {
@@ -1887,327 +1887,705 @@ class question29 {
 
                     <button class="accordion accordion-DBMS">1.	List all information about all department from emp table. .</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select * from emp;
+
                           </pre>
                         </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">2.	List all employee names along with their salaries from emp table.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename, sal from emp;
+
                           </pre>
                         </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">3.	List all department numbers, employee numbers and their managers numbers in descending order of deptno from emp table.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select deptno,empno,mno from emp order by deptno desc;
+
                           </pre>
                         </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">4.	List department names and locations from the dept table.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select dname,loc from dept;
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">5.	List the employees belonging to the department 20. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select * from dept where deptno=20;
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">6.	List the name and salary of the employees whose salary is more than 1000.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename,sal from emp where sal>1000;
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">7.	List the names of the clerks working in the department 20. .</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename from emp where job=’CLERK’ and deptno=20;
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">8.	List the names of analysts and salesmen.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename from emp where job=’ANALYST’ or job=’SALESMAN’;
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">9.	List the details of the employees who have joined before the end of September 81.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select * from emp where hiredate between to_date('01-sep-1981','dd-mm-yyyy') and
+to_date('30-sep-1981','dd-mm-yyyy');
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">10.	List the names of employees who are not managers. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename,job from emp where job not in(select job from emp where job=’MANAGER’);  
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">11.	List the names of employees whose employee number are 7369, 7521, 7839, 7934, 7788. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename from emp where empno=7369 or empno=7521 or empno=7839 or empno=7934 or empno=7788;
+
                           </pre>
                         </code>
                     </div>
                     
                     <button class="accordion accordion-DBMS">12.	List the employee details not belonging to the department 10, 30, and 40.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select * from emp where deptno not in(10,30,40);
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">13.	List the employee name and salary, whose salary is between 1000 and 2000. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename, sal from emp where sal between 1000 and 2000;
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">14.	List the employee names, who are not eligible for commission.(salary having >15,000 eligible for commission</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename from emp where comm is null or sal>15000;
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">15.	List the employees who are eligible for commission. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename from emp where comm is not null;  
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">16.	List the details of employees, whose salary is greater than 2000 and commission is NULL. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select * from emp where sal>2000 and comm is null;
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">17.	List the employees whose names start with an “S” (not”s”). </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+
+select ename from emp where ename like 'S%';
+
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">18.	List the name, salary and PF amount of all the employees(PF is calculated as 10% of salary). </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                        <code class="codes">
                           <pre>
+select ename, sal, sal*10/100 "pf" from emp;
                           </pre>
                         </code>
                     </div>
                     <button class="accordion accordion-DBMS">19.	List the empno, ename, sal in ascending order of salary. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                        <pre>
+
+select empno, ename, sal from emp order by sal;
+
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-DBMS">20.	List the employee name, salary, job and Department no in descending order of Department No and descending order of  salary. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                        <pre>
+
+select empno, deptno, job, sal from emp order by deptno, sal desc;
+
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-DBMS">21.	List the employee details in ascending order of salary. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                        <pre>
+
+select * from emp order by sal;
+
+                        </pre>
+                      </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">22.	List the employee details in descending order of salary </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                        <pre>
+
+select * from emp order by sal desc;
+
+                        </pre>
+                      </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">23.	Display name, sal and commission of all employees whose monthly salary is greater than their commission.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename,sal,comm from emp where sal>comm;
+
+                          </pre>
+                        </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">24.	Select SMITH HAS WORKED IN THE POSITION OF CLERK IN DEPT 20.Display result in this format. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename || 'HAS WORKED IN THE POSITIONOF '||JOB||' IN DEPT '|| DEPTNO FROM EMP WHERE ENAME='SMITH';
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">25.	Generate a statement which prompts the user at runtime. The intention is to display employees hired between 2 given dates.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select * from emp where hiredate between to_date(&d1,'dd-mm-yyyy') and to_date(&d2,'dd-mm-yyyy');
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">26.	Define a variable representing an expression used to calculate total annual remuneration. Use the variable in a statement which finds all employees who earn $30000 a year or more.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+define x=(sal*12);
+select ename,sal from emp where &x>=30000;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">27.	List all the employees name and salaries increased by 15% and expressed as a whole number of dollars. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename,sal,concat('$',to_char(round(sal*15/100)+sal,0)) from emp;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">28.	Produce the following EMPLOYEE AND JOB SMITH CLERK ALLEN SALESMAN </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename ||' '|| job from emp
+where ename ='SMITH' or ename ='ALLEN';
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">29.	Produce the following output: SMITH ( Clerk) ALLEN ( Salesman)</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename ||' ( '|| job || ‘)’ from emp
+where ename ='SMITH' or ename ='ALLEN';
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">30.	Do a case sensitive search for a list of employees with a job that the user enters. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select * from emp where job ='&j';
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">31.	It has been discovered that the sales people in dept. 30 are not all male. Please produce the Following output. ENAME DEPTNO JOB ALLEN 30 Sales Person  </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename ||' '|| deptno ||' '|| job ||' '||'Sales Person' from emp
+WHERE ENAME = 'ALLEN';
+                          
+                          </pre>
+                        </code>
                     </div>
                     
                     <button class="accordion accordion-DBMS">32.	Display each employees name and hiredate of dept 20.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename,hiredate from emp where deptno=20;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">33.	Display each employees name, hiredate and salary review date. Assume salary review date is one year from hiredate. Output should be in ascending review date. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename, hiredate, TO_CHAR( ADD_MONTHS( hiredate , 12),’dd-mon-yy’) “review date” from emp order by hiredate;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">34.	Print list of employees displaying just salary, if more than 1500. If exactly 1500 display “ On Target”.1500”. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+SELECT EMPNO,ENAME,SAL,JOB,
+CASE
+WHEN SAL>1500 THEN 'JUST SALARY'
+WHEN SAL = 1500 THEN 'ON TARGET'
+ELSE 'NOTHING'
+END "REVISED SALARY"
+FROM EMP;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">35.	Write a query which returns DAY of the week ( i.e. MONDAY) for any date entered in the format DD/MM/YY.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select to_char(to_date('& s','dd-mm-yyyy'),'day') from dual;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">36.	Write a query to calculate length of service of each employee. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+DEFINE service = ((months_between(sysdate,hiredate))/12);
+select empno,ename,&service from emp where ename = '&name';
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">37.	Find the minimum salary of all employees. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select MIN(sal) from emp;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">38.	Find the maximum, minimum, and average salaries of all employees. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select MIN(sal),MAX(sal) , AVG(sal) from emp;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">39.	List the maximum and minimum salary of each job type. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select MIN(sal),MAX(sal) from emp
+group by job;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">40.	Find how many managers are in each dept.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select deptno,count(*) from emp where job ='MANAGER' group by deptno;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">41.	Find the average salary and average total remuneration of each job type. Remembers sales man earn commission.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select avg(sal),avg(sal+nvl(comm,0)) from emp;
+
+                          </pre>
+                        </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">42.	Find out the difference between highest and lowest salary. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+SELECT MAX(sal) - MIN(sal) DIFFERENCE from emp;
+
+                          </pre>
+                        </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">43.	Find all department s which have more than three employees</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select deptno,count(*) from emp group by deptno
+having count(*)>3;
+
+                          </pre>
+                        </code>
                     </div>
 
                     <button class="accordion accordion-DBMS">44.	List department names and locations from the dept table.44.	Check whether all employee nos are unique. ( No Duplicate) </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select empno,count(*) from emp group by empno;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">45.	List lowest paid employee working for each Manager. Exclude any groups where the minimum salary is less than 1000. Sort the output by salary.  </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select * from emp where sal in
+(select min(sal) from emp group by job having min(sal)>1000)
+order by sal;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">46.	Produce a list showing employees ‘salary grade’.(<10000 A, >10000 &20000 B) >20000 C</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select ename,sal,
+case
+when sal*12>10000 then 'A'
+when sal*12>1000 and sal*12<20000 then 'B'
+else 'C'
+end "SAL GRADE" from emp;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">47.	Show only employee on Grade C.</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select * from emp 
+Where sal*12 >20000;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">48.	Show all emplosyee in Dallas. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select e.empno, e.ename, e.deptno, e.sal, d.loc from emp e, dept d 
+where e.deptno = d.deptno and d.loc in ('DALLAS');
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">49.	List the employees name, job, salary, grade and department for everyone in the company except clerks. Sort on salary, displaying the highest first. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select e.name, e.job, e.sal, e.deptno, g.grade from emp e, sal_grade g
+Where job < > ‘CLERK’ order by sal desc;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">50.	List the following details of employees who earn $36000 a year or who are clerks. Ename Job Annual Sal Dept no Dname Grade</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select e.empno,e.ename,e.job,e.sal,d.dname,e.sal*12"ANNUAL SALARY" from emp e,dept d
+where sal*12>36000 or job='CLERK';
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">51.	Display all employees who earn less than their managers. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select w.empno,w.ename,w.job,w.sal,w.hiredate from emp w,
+emp m
+where w.mgr = m.empno
+and w.sal< m.sal;
+
+                          </pre>
+                        </code>
                     </div>
                     
                     <button class="accordion accordion-DBMS">52.	Display all employees by name and eno along with their managers name and number. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+select e.ename,e.empno,m.ename,m.mgr from emp e, emp m
+where e.mgr = m.empno;</pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">53.	Modify above spoliation to display KING who has no MANAGER. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select w.empno, w.ename,m.empno ,m.ename from emp w,emp m where w.mgr=m.empno(+); 
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">54.	Find the job that was files in the first half of 1983 and the name job that was filled in the same period in 1984. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select * from emp where (to_char(hiredate,'MM ')<= 06 and
+to_char(hiredate,'YYYY') = 1984) and job in (select job from emp
+where to_char(hiredate,'MM')<=06 and to_char(hiredate,'YYYY')<=1983);
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">55.	Find all employees who have joined before their manager. EMPLOYEE HIREDATE MANAGER HIREDATE </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select * from emp w, emp m where w.mgr=m.empno and w.hiredate < m.hiredate;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">56.	Find the employees who earn the highest salary in each job, type, sort in descending order of salary. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                          <pre>
+
+select * from emp where sal in(select max(sal) from emp group by job) order by sal desc;
+
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-DBMS">57.	Find the employees who earn the minimum salary for their job,   Display the result in descending order of salary . </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                        <pre>
+
+select * from emp where sal in
+(select min(sal) from emp group by job) order by sal desc;
+
+                        </pre>
+                      </code>                  
                     </div>
                     <button class="accordion accordion-DBMS">58.	 Find the most recently hired employees in the department. Order by hiredate. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center> -->
+                      <code class="codes">
+                        <pre>
+
+select * from emp e where hiredate in
+(select max(hiredate) from emp where e.deptno = deptno) order by hiredate;
+
+                        </pre>
+                      </code>                    
                     </div>
                     <button class="accordion accordion-DBMS">59.	Show the details of any employee who earns a salary greater than the average for their department. Sort in department number order. </button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center>     -->
+                      <code class="codes">
+                        <pre>
+
+select * from emp e where sal>(select avg(sal) from emp where e.deptno = deptno);
+
+                        </pre>
+                      </code>                  
                     </div>
                     <button class="accordion accordion-DBMS">60.	List all department where there are no employees</button>
                     <div class="panel">
-                      <center><h2 class="not-available">Not Available</h2></center>
+                      <!-- <center><h2 class="not-available">Not Available</h2></center>   -->
+                      <code class="codes">
+                        <pre>
+
+select deptno,count(*) from emp
+group by deptno
+having count(*) = 0;
+
+                        </pre>
+                      </code>                    
                     </div>
 
 
