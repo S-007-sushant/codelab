@@ -1,2 +1,2 @@
 # codelab
-Welcome, to every one at codelab. Here we provide the solutions of every lab question related to your accadmics.
+Welcome to our codelab. Here we provide the solutions of every lab question related to your accadmics.(Only for BIT LALPUR)
