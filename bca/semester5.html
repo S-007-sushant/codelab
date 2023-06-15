@@ -67,9 +67,9 @@
           <div class="solution-wrapper">
               <div class="s-w-left-content">
                   <div class="select-semester">
-                    <a href="/bca/semester4.html"><button class="previous-semester"><center><i class="fas fa-angle-left previous-button"></i></center></button></a>
+                    <a href="/bca/semester4.html"><button class="previous-semester"><center><img class="previous-button" src="./angle-left.png" alt="previous-button"></i></center></button></a>
                     <div class="current-semester">Semester 5</div>
-                    <a href="/bca/semester6.html"><button class="previous-semester"><center><i class="fas fa-angle-right next-button"></i></center></button></a>
+                    <a href="/bca/semester6.html"><button class="previous-semester"><center><img class="next-button" src="./angle-right.png" alt="next-button"></center></button></a>
                   </div>
                   <div class="subject-button">
                   <button class="tablinks" id="defaultOpen" onclick="openSubject(event,'Python')">Python Lab</button>
@@ -87,9 +87,7 @@
                         <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                         <code class="codes">
                           <pre>
-
 print("Hello to Python Programming.")
-
                           </pre>
                         </code>
                       </div>
@@ -98,7 +96,6 @@ print("Hello to Python Programming.")
                         <!-- <center><h2 class="not-available">Not Available</h2></center> -->
                         <code class="codes">
                           <pre>
-
 number1= eval(input("Enter first number : "))
 number2 = eval(input("Enter second number : "))
 print("Addition : ",number1+number2)
@@ -1266,39 +1263,187 @@ else:
 
                     <button class="accordion accordion-CGL">1. To get the background color.</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                        <code class="codes">
+                          <pre>
+
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+  int gdrive = DETECT, gmode;
+  initgraphic(&gdrive, &gmode, "");
+  int bkcolor = getbkcolor();
+  printf("Currenct background color = %d", bkcolor);
+  getch();
+  closegraph();
+}
+                          </pre>
+                        </code>
                     </div>
                     <button class="accordion accordion-CGL">2. To set the background color.</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+int gdrive = DETECT, gmode;
+initgraphic(&gdrive, &gmode, "");
+printf("Press any key to change the background color to Green");
+getch();
+setbkcolor(2);
+getch();
+closegraph();
+
+}
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-CGL">3. To plot a point of co-ordinate (100,100).</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+int gdrive = DETECT, gmode;
+initgraphic(&gdrive, &gmode, "");
+putpixel(100,100,GREEN) // co-ordinate of (100,100) with green color
+getch();
+closegraph();
+
+}
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-CGL">4. To draw a line using the line funciton.</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+int gdrive = DETECT, gmode;
+initgraphic(&gdrive, &gmode, "");
+putpixel(100,100,GREEN) // co-ordinate of (100,100) with green color
+getch();
+closegraph();
+
+}
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-CGL">5. To draw a line using the line funciton. Take the end co-ordinates from the user.</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+int gdrive = DETECT, gmode;
+initgraphic(&gdrive, &gmode, "");
+putpixel(100,100,GREEN) // co-ordinate of (100,100) with green color
+getch();
+closegraph();
+
+}
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-CGL">6. To draw a triangle using the polygon function.</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+int gdrive = DETECT, gmode;
+initgraphic(&gdrive, &gmode, "");
+putpixel(100,100,GREEN) // co-ordinate of (100,100) with green color
+getch();
+closegraph();
+
+}
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-CGL">7. To draw a polygon of 'n' edges using polygon funciton.</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+int gdrive = DETECT, gmode;
+initgraphic(&gdrive, &gmode, "");
+putpixel(100,100,GREEN) // co-ordinate of (100,100) with green color
+getch();
+closegraph();
+
+}
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-CGL">8. To draw a polygon of 'n' edges taken form the users using the polygon funciton.</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+int gdrive = DETECT, gmode;
+initgraphic(&gdrive, &gmode, "");
+putpixel(100,100,GREEN) // co-ordinate of (100,100) with green color
+getch();
+closegraph();
+
+}
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-CGL">9. To draw a circle using the circle function.</button>
                     <div class="panel">
-                        <center><h2 class="not-available">Not Available</h2></center>
+                      <code class="codes">
+                        <pre>
+
+#include &lt;conio.h&gt;
+#include &lt;graphics.h&gt;
+
+void main()
+{
+int gdrive = DETECT, gmode;
+initgraphic(&gdrive, &gmode, "");
+putpixel(100,100,GREEN) // co-ordinate of (100,100) with green color
+getch();
+closegraph();
+
+}
+                        </pre>
+                      </code>
                     </div>
                     <button class="accordion accordion-CGL">10. To draw a circle of radius 'r' taken form the user using the circle function.</button>
                     <div class="panel">
